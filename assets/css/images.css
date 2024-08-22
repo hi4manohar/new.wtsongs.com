@@ -1,0 +1,133 @@
+.favourite {
+  background:url(http://img.wtsongs.com/images/static/site/favorites_icon3.png) no-repeat scroll 0% 0%;
+}
+.sharesong {
+  background:url(http://img.wtsongs.com/images/static/site/share_icon1.png) no-repeat scroll 0% 0%;
+}
+.bgred {
+  background-color: red !important;
+}
+.bgnone {
+  background-color: none !important;
+}
+.sa-success{
+  display: none !important;
+}
+.fixed {
+  position:fixed;
+}
+.cpImage img {
+  width: 100%;
+  height: 100%;
+}
+.middleText a {
+  padding: 20px 0px 0px 10px;
+  font-size: 13px;
+}
+.headText {
+  color: #DDC4C4;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.closeButton {
+  background:url(http://img.wtsongs.com/images/static/site/cancel.png) no-repeat;
+}
+
+.playerImg {
+  background:url(http://img.wtsongs.com/images/static/site/player_image.jpg) no-repeat;
+}
+
+.seogiUI {
+  font-family: "Segoe UI",Arial,Verdana,sans-serif;
+}
+
+.btn-small {
+  font-size: 11px;
+  line-height: 16px;
+  padding: 4px 12px;
+}
+
+.green {
+  background-color: #30B55A;
+}
+
+.btn {
+  color: #fff;
+  border: 0;
+  border-radius: 70px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 0;
+  padding: .5em 1.2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.active {
+  background-color: #30B55A;
+}
+
+.toggler {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: block;
+  height: 20px;
+  left: 0px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  cursor: pointer;
+}
+
+.custom_checkbox.on:not(:hover) .toggler {
+  border-color: #30B55A;
+}
+
+.checked {
+  background: url(http://img.wtsongs.com/images/static/site/ok_glp.png) no-repeat;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.img {
+  background:url(img.wtsongs.com/images/static/song_default_175x175.jpg) no-repeat;
+}
+
+.arBottom {
+  padding-bottom: 20px;
+}
+
+.text {
+  color:#fff;
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+.downloadbt {
+    width: 250px !important;
+    margin-left: 0px !important;
+}
+
+.downloadButton {
+  width: 250px !important;
+  float:left;
+  background-color: transparent !important;
+  padding-top: 0px !important;
+
+}
+
+.sweet-alert {
+  overflow: visible !important;
+}

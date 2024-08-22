@@ -1,0 +1,5 @@
+#Url Rewriting Starts
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+RewriteRule playlists/(.*)/(.*)/? /test/mp3/index.php?name=$1&lang=$2 [NC,L]

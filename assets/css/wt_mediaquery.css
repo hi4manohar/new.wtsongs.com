@@ -1,0 +1,1472 @@
+@media screen and (min-width:750px) and (max-width:850px){
+    /* ======= browse page media query ==== */
+    .browse_page_nav2{
+        width: 100%;
+        height:80px;
+        border-bottom: 1px solid #4d4c4c;
+    }
+    .browse_page_nav2 ul{
+        list-style-type: none;
+    }
+    .browse_page_nav2 ul li{
+        float: left;
+    }
+    .browse_page_nav2 li a{
+        display: block;
+        text-decoration: none;
+        color: #797878;
+        font-size: 11px;
+        font-family: 'museo_sans700';
+        line-height: 42px;
+        margin: 0px 18px;
+        text-transform: uppercase;
+    }
+    .browse_page_nav2 li a:hover{
+        color: #fff;
+     
+    }
+    /* ======= browse page media query ==== */
+    
+    
+    /* footer nav media query start */
+    .footer_nav {
+        width: 100%;
+        height: 90px;
+        background-color: #100e0e;
+        border-bottom: 1px solid #4d4c4c;
+        float: left;
+        margin-bottom: 80px;
+    }
+    .footer_nav_left {
+        width: 67%;
+        height: 90px;
+        background-color: #000;
+        float: left;
+    }
+    .footer_menu {
+        width: 100%;
+        height: 70px;
+    }
+    .footer_menu li a {
+        color: #ccc;
+        font-family: 'museo_sans700';
+        font-size: 11px;
+        text-decoration: none;
+        display: block;
+        padding-top: 15px;
+        padding-left: 24px;
+    }
+    .footer_nav_left p {
+        color: #828586;
+        font-family: 'museo_sans700';
+        font-size: 12px;
+        text-align: center;
+        float: left;
+        padding-left: 100px;
+    }
+    .footer_nav_right {
+        width: 33%;
+        height: 90px;
+        float: right;
+        background-color: #000;
+    }
+    .fb_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #2b3990;
+        float: left;
+        margin-left: 2px;
+        opacity: .5;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        background-position: -2px -2px;
+    }
+    .tw_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #27aae1;
+        float: left;
+        margin-left: 5px;
+        opacity: .5;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        background-position: -51px -2px;
+    }
+    .g_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #d70912;
+        float: left;
+        margin-left: 5px;
+        opacity: .5;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        background-position: -105px -5px;
+    }
+    .in_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #1c75bc;
+        float: left;
+        margin-left: 5px;
+        opacity: .5;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        background-position: -51px -50px;
+    }
+    /* footer nav media query */
+    
+     /* =========== media query of album page ========= */   
+    .album_containner_inner_img{
+        height: 175px;
+        width: 175px;
+        float: left;
+        position: relative;
+    }
+    .album_containner_inner_img img{
+        width: 100%;
+        height: 100%;
+    }
+    .album_containner_details{
+        width: 285px;
+        height: 175px;
+        float: left;
+        margin-left: 20px;
+    }
+    .album_details{
+        width: 285px;
+        height: 175px;
+    }
+    .album_name{
+        font-family: 'museo_sans700';
+        font-size: 30px;
+        color: #ccc;
+        overflow: hidden;
+    }
+    .album_by{
+        width:285px;
+        height: 25px;
+        color: #B5B1B1;
+        font-family: 'museo_sans700';
+        font-size: 14px;
+        overflow: hidden;
+        padding-top: 5px;
+    }
+    .album_by a{
+        font-family: 'museo_sans700';
+        font-size: 14px;
+        color: #dddddd;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .album_by a:hover{
+        text-decoration: underline;
+    }
+    .album_length{
+        width:285px;
+        height: 20px;
+        color: #B5B1B1;
+        font-family: 'museo_sans700';
+        font-size: 12px;
+        overflow: hidden;
+        margin-top: 5px;
+        float: left;
+    }
+    .album_singer{
+        width:285px;
+        height: 20px;
+        color: #B5B1B1;
+        font-family: 'museo_sans700';
+        font-size: 12px;
+        overflow: hidden;
+    }
+    .album_singer a{
+        font-family: 'museo_sans700';
+        font-size: 14px;
+        color: #dddddd;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .album_favorites{
+        width:285px;
+        height: 20px;
+        color: #ccc;
+        font-family: 'museo_sans700';
+        font-size: 13px;
+        overflow: hidden;
+    }
+    .button{
+        width: 285px;
+        height: 35px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .download_button{
+        width: 100px;
+        height: 30px;
+        background-color: #3C3737;
+        border:1px solid #6D6B6B;
+        border-radius: 3px;
+        float: left;
+        border-radius: 30px;
+        padding: 0px 10px;
+    }
+    .downloadIcon {
+        background: url(http://img.wtsongs.com/images/static/site/download_image.png) no-repeat;
+        background-position:10px;
+    }
+    .download_button:hover{
+        border:1px solid #ccc;
+        cursor: pointer;
+    }
+    .comment_button{
+        width: 100px;
+        height: 30px;
+        background-color: #3C3737;
+        border:1px solid #6D6B6B;
+        border-radius: 3px;
+        float: left;
+        margin-left: 5px;
+        border-radius: 30px;
+        padding: 0px 5px;
+        background-position: -5px -468px;
+       
+    }
+    .commentIcon {
+        background: url(http://img.wtsongs.com/images/static/site/comment_button.png) no-repeat;
+        background-position:10px;
+    }
+    .comment_button:hover{
+        border:1px solid #ccc;
+        cursor: pointer;
+    }
+    .favorite{
+        width: 30px;
+        height: 30px;
+        margin-left:5px;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .4;
+        background-color: #3C3737;
+        background-position: 10px;
+    }
+    .favouriteIcon {
+        background: url(http://img.wtsongs.com/images/static/site/favorites_icon1.png) no-repeat;
+        background-position: 5px;
+    }
+    .favorite:hover{
+        opacity: 1;
+    }
+    .favorite img{
+        margin-top: 8px;
+        margin-left: 7px;
+    }
+    .add{
+        width: 30px;
+        height: 30px;
+        margin-left:2px;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .4;
+        background-color: #3C3737;
+        background-position: 10px;
+        display: hidden;
+    }
+    .addIcon {
+        background: url(http://img.wtsongs.com/images/static/site/add_icon1.png) no-repeat;
+        background-position: 4px;
+        display:none;
+    }
+    .add:hover{
+        opacity: 1;
+    }
+    .add img{
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+    .share{
+        width: 30px;
+        height: 30px;
+        margin-left:2px;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .4;
+        background-color: #3C3737;
+        background-position: 10px;
+        display: none;
+    }
+    .shareIcon {
+        background: url(http://img.wtsongs.com/images/static/site/share_icon1.png) no-repeat;
+        background-position: 6px;
+        background-size: 15px;
+    
+    }
+    .share:hover{
+        opacity: 1;
+    }
+    .share img{
+        width: 20px;
+        height: 20px;
+        margin-top: 7px;
+        margin-left: 2px;
+    }
+    
+    
+    .album_songs_containner{
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #4d4c4c;
+        float: left;
+    }
+    .album_songs_containner_inner{
+        width: 100%;
+        height:auto;
+        float: left;
+    }
+    
+    .album_identity{
+        width: 100%;
+        height: 45px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .album_identity_inner{
+        width: 100%;
+        height: 25px;
+        margin-top: 10px;
+    }
+    .identity_name{
+        width: 30%;
+        float: left;
+    }
+    .identity_name span{
+        color: #c4c4c4;
+        font-family: 'museo_sans700';
+        font-size: 15px;
+        padding-top: 0px;
+        padding-left:50px; 
+        float: left;
+    }
+    .identity_artits_name{
+        width: 30%;
+        float: left;
+    }
+    li.identity_name img {
+        width: 15px;
+        height: 15px;
+        margin-top: 8px;
+        margin-left: 3px;
+    }
+    .identity_artits_name span{
+        color: #c4c4c4;
+        font-family: 'museo_sans700';
+        font-size: 15px;
+        padding-bottom: 5px;
+        padding-left: 50px;
+        float: left;
+    }
+    li.identity_artits_name img {
+        width: 15px;
+        height: 15px;
+        margin-top: 8px;
+        margin-left: 3px;
+    }
+    .identity_popularity{
+        width: 20%;
+        float: left;
+        height: 30px;
+        overflow: hidden;
+    }
+    .identity_popularity span{
+        color: #c4c4c4;
+        font-family: 'museo_sans700';
+        font-size: 15px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        float: left;
+    }
+    li.identity_popularity img {
+        width: 15px;
+        height: 15px;
+        margin-top: 8px;
+        margin-left: 2px;
+    }
+    .identity_actions{
+        width: 20%;
+        float: left;
+        height: 30px;
+        overflow: hidden;
+    }
+    .identity_actions span{
+        color: #c4c4c4;
+        font-family: 'museo_sans700';
+        font-size: 15px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        float: left;
+    }
+    li.identity_actions img {
+        width: 15px;
+        height: 15px;
+        margin-top: 8px;
+        margin-left: 2px;
+    }
+    
+    .album_track{
+        width: 100%;
+        height: 45px;
+        float: left;
+    }
+    .album_track:hover{
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .album_track_inner{
+        width: 100%;
+        height: 45px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li a{text-decoration: none;}
+    .track_name{
+        width: 30%;
+        float: left;
+    }
+    .track_player{
+        width: 30px;
+        height: 30px;
+        float: left;
+        opacity: .7;
+        background-size: 25px;
+        margin-left: 5px;
+        margin-top: 8px;
+    }
+    .track_player:hover{
+        opacity: 1;
+    }
+    .track_name a p{
+        color: #BBB9B9;
+        font-family: 'museo_sans700';
+        font-size: 13px;
+        width: 72%;
+    }
+    .artits_name{
+        width: 30%;
+        float: left;
+    }
+    .artits_name span{
+        color: #908E8E;
+        font-family: 'museo_sans700';
+        font-size: 14px;
+        padding-top: 5px;
+        padding-left: 30px;
+        float: left;
+    
+    }
+    .artits_name span:hover{
+        text-decoration: underline;
+    }
+    
+    .popularity img{
+       width: 25px;
+       height: 25px;
+       float: left;
+    }
+    .actions img{
+       width: 25px;
+       height: 25px;
+       float: left;
+    }
+    .artits_name img{
+       width: 25px;
+       height: 25px;
+       float: left;
+    }
+    .popularity{
+        width: 20%;
+        float: left;
+    }
+    .progress_bar{
+        width: 80px;
+        height: 2px;
+        background-color: #0ff;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .actions{
+        width: 20%;
+        float: left;
+    }
+    .action_containner{
+        width: 130px;
+        height: 35px;
+        float: left;
+        margin-left: 0px;
+    
+    }
+    .downloads_icon{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        background-color: #3C3737;
+        opacity: .5;
+        cursor: pointer;
+        background-position:-63px -518px;
+        background-size: 800px;
+    }
+    .downloadsIcon {
+        background:url(http://img.wtsongs.com/images/static/site/downloads_icon1.png) no-repeat;
+        background-size: 15px;
+        background-position: 5px;
+    }
+    .downloads_icon:hover{
+        opacity: 1;
+    }
+    
+    .addto_playlist {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        background-color: #3C3737;
+        opacity: .5;
+        cursor: pointer;
+        background-position:-51px -651px;
+        background-size: 1000px;
+    }
+    .addToIcons {
+        background:url(http://img.wtsongs.com/images/static/site/add_icon1.png) no-repeat;
+        background-size: 15px;
+        background-position: 5px 4px;
+    }
+    .addto_playlist:hover{
+        opacity: 1;
+    }
+    
+    .more_icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        background-color: #3C3737;
+        opacity: .5;
+        cursor: pointer;
+        background-position:-82px -384px;
+        background-size: 600px;
+    }
+    .moreIcons {
+        background:url(http://img.wtsongs.com/images/static/site/more_icon.png) no-repeat;
+        background-size: 30px;
+        background-position: -2px;
+    }
+    .more_icon:hover{
+        opacity: 1;
+    }
+    
+    .album_player{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 60px;
+        opacity: .8;
+    }
+    .albumPlayerIcon {
+        background:url(http://img.wtsongs.com/images/static/site/player_icon2.png);
+    }
+    .album_player:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    /* =========== media query of album page  end ========= */
+    
+    /* ============ facebook login  media query =====*/
+    .facebook_login {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .facebook_login p {
+        color: #fff;
+        float: left;
+        font-family: 'museo_sans300';
+        font-size: 106%;
+        padding-top: 20px;
+        padding-right: 9px;
+        padding-left: 27px;
+    }
+    .fb_login_button {
+        background-color: #2a388f;
+        width: 32%;
+        height: 32px;
+        float: left;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-top: 16px;
+    }
+    .likeUsIcon {
+        width: 30px;
+        height: 20px;
+        display: inline-block;
+        overflow: hidden;
+        margin-top: 5px;
+        margin-left: 6px;
+        float: left;
+        background-size: 130px !important;
+    }
+    p.likeText {
+        padding-left: 0px;
+        font-size: 86%;
+        margin-top: -1px !important;
+        padding-top: 9px;
+    }
+    
+}
+ /* ============ facebook login home page media query =====*/
+
+ /*=========== media query of album page ========= */
+ @media screen and (min-width:850px) and (max-width:1050px){
+
+    .facebook_login {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .facebook_login p {
+        color: #fff;
+        float: left;
+        font-family: 'museo_sans300';
+        font-size: 126%;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .fb_login_button {
+        background-color: #2a388f;
+        width: 34%;
+        height: 40px;
+        float: left;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    p.likeText {
+        padding-left: 5px;
+        font-size: 95%;
+        margin-top: 1px !important;
+    }
+    /* footer nav media query start */
+    .footer_nav {
+        width: 100%;
+        height: 90px;
+        background-color: #100e0e;
+        border-bottom: 1px solid #4d4c4c;
+        float: left;
+        margin-bottom: 80px;
+    }
+    .footer_nav_left {
+        width: 67%;
+        height: 90px;
+        background-color: #000;
+        float: left;
+    }
+    .footer_menu {
+        width: 100%;
+        height: 70px;
+    }
+    .footer_menu li a {
+        color: #ccc;
+        font-family: 'museo_sans700';
+        font-size: 11px;
+        text-decoration: none;
+        display: block;
+        padding-top: 15px;
+        padding-left: 24px;
+    }
+    .footer_nav_left p {
+        color: #828586;
+        font-family: 'museo_sans700';
+        font-size: 12px;
+        text-align: center;
+        float: left;
+        padding-left: 100px;
+    }
+    .footer_nav_right {
+        width: 33%;
+        height: 90px;
+        float: right;
+        background-color: #000;
+    }
+    .fb_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #2b3990;
+        float: left;
+        margin-left: 2px;
+        opacity: .5;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        background-position: -2px -2px;
+    }
+    .tw_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #27aae1;
+        float: left;
+        margin-left: 5px;
+        opacity: .5;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        background-position: -51px -2px;
+    }
+    .g_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #d70912;
+        float: left;
+        margin-left: 5px;
+        opacity: .5;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        background-position: -105px -5px;
+    }
+    .in_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #1c75bc;
+        float: left;
+        margin-left: 5px;
+        opacity: .5;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        background-position: -51px -50px;
+    }
+    /* footer nav media query */
+
+    /*  ========== album page media query start ===== */
+    .album_containner_inner_img{
+        height: 175px;
+        width: 175px;
+        float: left;
+        position: relative;
+    }
+    .album_containner_details{
+        width: 340px;
+        height: 175px;
+        float: left;
+        margin-left: 20px;
+    }
+    .album_details{
+        width: 340px;
+        height: 175px;
+    }
+    .album_name{
+        font-family: 'museo_sans700';
+        font-size: 30px;
+        color: #ccc;
+        overflow: hidden;
+    }
+    .album_by{
+        width:300px;
+        height: 25px;
+        color: #B5B1B1;
+        font-family: 'museo_sans700';
+        font-size: 14px;
+        overflow: hidden;
+        padding-top: 5px;
+    }
+    .album_by a{
+        font-family: 'museo_sans700';
+        font-size: 14px;
+        color: #dddddd;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .album_by a:hover{
+        text-decoration: underline;
+    }
+    .album_length{
+        width:300px;
+        height: 20px;
+        color: #B5B1B1;
+        font-family: 'museo_sans700';
+        font-size: 12px;
+        overflow: hidden;
+        margin-top: 5px;
+        float: left;
+    }
+    .album_singer{
+        width:300px;
+        height: 20px;
+        color: #B5B1B1;
+        font-family: 'museo_sans700';
+        font-size: 12px;
+        overflow: hidden;
+    }
+    .album_singer a{
+        font-family: 'museo_sans700';
+        font-size: 14px;
+        color: #dddddd;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .album_favorites{
+        width:300px;
+        height: 20px;
+        color: #ccc;
+        font-family: 'museo_sans700';
+        font-size: 13px;
+        overflow: hidden;
+    }
+    .button{
+        width: 350px;
+        height: 35px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .download_button{
+        width: 100px;
+        height: 30px;
+        background-color: #3C3737;
+        border:1px solid #6D6B6B;
+        border-radius: 3px;
+        float: left;
+        border-radius: 30px;
+        padding: 0px 10px;
+    }
+    .downloadIcon {
+        background: url(http://img.wtsongs.com/images/static/site/download_image.png) no-repeat;
+        background-position:10px;
+    }
+    .download_button:hover{
+        border:1px solid #ccc;
+        cursor: pointer;
+    }
+    .comment_button{
+        width: 100px;
+        height: 30px;
+        background-color: #3C3737;
+        border:1px solid #6D6B6B;
+        border-radius: 3px;
+        float: left;
+        margin-left: 5px;
+        border-radius: 30px;
+        padding: 0px 5px;
+        background-position: -5px -468px;
+       
+    }
+    .commentIcon {
+        background: url(http://img.wtsongs.com/images/static/site/comment_button.png) no-repeat;
+        background-position:10px;
+    }
+    .comment_button:hover{
+        border:1px solid #ccc;
+        cursor: pointer;
+    }
+    .favorite{
+        width: 30px;
+        height: 30px;
+        margin-left:5px;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .4;
+        background-color: #3C3737;
+        background-position: 10px;
+    }
+    .favouriteIcon {
+        background: url(http://img.wtsongs.com/images/static/site/favorites_icon1.png) no-repeat;
+        background-position: 5px;
+    }
+    .favorite:hover{
+        opacity: 1;
+    }
+    .favorite img{
+        margin-top: 8px;
+        margin-left: 7px;
+    }
+    .add{
+        width: 30px;
+        height: 30px;
+        margin-left:2px;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .4;
+        background-color: #3C3737;
+        background-position: 10px;
+        display: hidden;
+    }
+    .addIcon {
+        background: url(http://img.wtsongs.com/images/static/site/add_icon1.png) no-repeat;
+        background-position: 4px;
+    }
+    .add:hover{
+        opacity: 1;
+    }
+    .add img{
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+    .share{
+        width: 30px;
+        height: 30px;
+        margin-left:2px;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .4;
+        background-color: #3C3737;
+        background-position: 10px;
+    }
+
+    .shareIcon {
+        background: url(http://img.wtsongs.com/images/static/site/share_icon1.png) no-repeat;
+        background-position: 6px;
+        background-size: 15px;
+
+    }
+    .share:hover{
+        opacity: 1;
+    }
+    .share img{
+        width: 20px;
+        height: 20px;
+        margin-top: 7px;
+        margin-left: 2px;
+    }
+    /* album page media query */
+    .album_songs_containner{
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #4d4c4c;
+        float: left;
+    }
+    .album_songs_containner_inner{
+        width: 100%;
+        height:auto;
+        float: left;
+    }
+
+    .album_identity{
+        width: 100%;
+        height: 45px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .album_identity_inner{
+        width: 100%;
+        height: 25px;
+        margin-top: 20px;
+    }
+    .identity_name{
+        width: 30%;
+        float: left;
+    }
+    .identity_name span{
+        color: #c4c4c4;
+        font-family: 'museo_sans700';
+        font-size: 15px;
+        padding-top: 0px;
+        padding-left:60px; 
+        float: left;
+    }
+    .identity_artits_name{
+        width: 30%;
+        float: left;
+    }
+    li.identity_name img {
+        width: 15px;
+        height: 15px;
+        margin-top: 0px;
+        margin-left: 3px;
+    }
+    .identity_artits_name span{
+        color: #c4c4c4;
+        font-family: 'museo_sans700';
+        font-size: 15px;
+        padding-bottom: 5px;
+        padding-left: 50px;
+        float: left;
+    }
+    li.identity_artits_name img {
+        width: 15px;
+        height: 15px;
+        margin-top: 0px;
+        margin-left: 3px;
+    }
+    .identity_popularity{
+        width: 20%;
+        float: left;
+    }
+    .identity_popularity span{
+        color: #c4c4c4;
+        font-family: 'museo_sans700';
+        font-size: 15px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        float: left;
+    }
+    li.identity_popularity img {
+        width: 15px;
+        height: 15px;
+        margin-top: 0px;
+        margin-left: 2px;
+    }
+    .identity_actions{
+        width: 20%;
+        float: left;
+    }
+    .identity_actions span{
+        color: #c4c4c4;
+        font-family: 'museo_sans700';
+        font-size: 15px;
+        padding-bottom: 5px;
+        padding-left: 40px;
+        float: left;
+    }
+    li.identity_actions img {
+        width: 15px;
+        height: 15px;
+        margin-top: 0px;
+        margin-left: 2px;
+    }
+    .album_track{
+        width: 100%;
+        height: 45px;
+        float: none;
+
+    }
+    .album_track:hover{
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .album_track_inner{
+        width: 100%;
+        height: 45px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li a{text-decoration: none;}
+    .track_name{
+        width: 30%;
+        float: left;
+    }
+    .track_player{
+        width: 30px;
+        height: 30px;
+        float: left;
+        opacity: .7;
+        background-size: 25px;
+        margin-left: 25px;
+        margin-top: 9px;
+    }
+    .track_player:hover{
+        opacity: 1;
+    }
+    .track_name a p{
+        color: #BBB9B9;
+        font-family: 'museo_sans700';
+        font-size: 13px;
+        padding-top: 5px;
+        padding-left:5px;
+        width: 60%; 
+    }
+    .artits_name{
+        width: 30%;
+        float: left;
+    }
+    .artits_name span{
+        color: #908E8E;
+        font-family: 'museo_sans700';
+        font-size: 14px;
+        padding-top: 12px;
+        padding-left: 30px;
+        float: left;
+
+    }
+    .artits_name span:hover{
+        text-decoration: underline;
+    }
+
+    .popularity img{
+       width: 25px;
+       height: 25px;
+       float: left;
+    }
+    .actions img{
+       width: 25px;
+       height: 25px;
+       float: left;
+    }
+    .artits_name img{
+       width: 25px;
+       height: 25px;
+       float: left;
+    }
+    .popularity{
+        width: 20%;
+        float: left;
+    }
+    .progress_bar{
+        width: 100px;
+        height: 2px;
+        background-color: #0ff;
+        margin-left: 20px;
+        margin-top: 21px;
+    }
+    .actions{
+        width: 20%;
+        float: left;
+    }
+    .action_containner{
+        width: 130px;
+        height: 35px;
+        float: left;
+        margin-left: 8px;
+
+    }
+    .downloads_icon{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        background-color: #3C3737;
+        opacity: .5;
+        cursor: pointer;
+        background-position:-63px -518px;
+        background-size: 800px;
+    }
+    .downloadsIcon {
+        background:url(http://img.wtsongs.com/images/static/site/downloads_icon1.png) no-repeat;
+        background-size: 15px;
+        background-position: 5px;
+    }
+    .downloads_icon:hover{
+        opacity: 1;
+    }
+
+    .addto_playlist {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        background-color: #3C3737;
+        opacity: .5;
+        cursor: pointer;
+        background-position:-51px -651px;
+        background-size: 1000px;
+    }
+    .addToIcons {
+        background:url(http://img.wtsongs.com/images/static/site/add_icon1.png) no-repeat;
+        background-size: 15px;
+        background-position: 5px 4px;
+    }
+    .addto_playlist:hover{
+        opacity: 1;
+    }
+
+    .more_icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        background-color: #3C3737;
+        opacity: .5;
+        cursor: pointer;
+        background-position:-82px -384px;
+        background-size: 600px;
+    }
+    .moreIcons {
+        background:url(http://img.wtsongs.com/images/static/site/more_icon.png) no-repeat;
+        background-size: 30px;
+        background-position: -2px;
+    }
+    .more_icon:hover{
+        opacity: 1;
+    }
+    .album_player{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 60px;
+        opacity: .8;
+    }
+    .albumPlayerIcon {
+        background:url(http://img.wtsongs.com/images/static/site/player_icon2.png);
+    }
+    .album_player:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    /* ============= album page media query end ===========*/
+
+    /* ======= browse page media query ==== */
+    .browse_page_nav2{
+        width: 100%;
+        height:80px;
+        border-bottom: 1px solid #4d4c4c;
+    }
+    .browse_page_nav2 ul{
+        list-style-type: none;
+    }
+    .browse_page_nav2 ul li{
+        float: left;
+    }
+    .browse_page_nav2 li a{
+        display: block;
+        text-decoration: none;
+        color: #797878;
+        font-size: 11px;
+        font-family: 'museo_sans700';
+        line-height: 42px;
+        margin: 0px 18px;
+        text-transform: uppercase;
+    }
+    .browse_page_nav2 li a:hover{
+        color: #fff;
+    }
+}
+
+/* ======= browse page media query ==== */
+/* =========== media query css end =========*/
+@media screen and (min-width:1100px) and (max-width:1164px){
+    .browse_page_nav2 li a:hover{
+        color: #fff;
+    }
+}
+/* ==== albums rights header details == */
+@media screen and (max-width:1150px) {
+    .album_details_right{
+        display: none;
+    }
+}
+
+/* === playlist page media  query */
+@media screen and (min-width:950px) and (max-width:1120px){
+    .playlist_main{
+    width: 30%;
+    height: auto;
+    float: left;
+    background-color: #1E1E1E;
+    margin: 15px 0px 0px 20px;
+    border: 1px solid #1E1E1E;
+    }
+}
+@media screen and (min-width:830px) and (max-width:949px){
+    .playlist_main{
+    width: 31.2%;
+    height: auto;
+    float: left;
+    background-color: #1E1E1E;
+    margin: 15px 0px 0px 10px;
+    border: 1px solid #1E1E1E;
+    }
+}
+@media screen and (min-width:600px) and (max-width:829px){
+    .playlist_main{
+    width: 43%;
+    height: auto;
+    float: left;
+    background-color: #1E1E1E;
+    margin: 15px 0px 0px 26px;
+    border: 1px solid #1E1E1E;
+    }
+}
+@media screen and (min-width:100px) and (max-width:600px){
+    .playlist_main{
+    width: 60%;
+    height: auto;
+    float: left;
+    background-color: #1E1E1E;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid #1E1E1E;
+    }
+}
+/* === playlist page media  query  end*/
+
+/* ==== top chart part media query */
+@media screen and (min-width:1050px) and (max-width:1150px){
+    .top_charts_inner{
+    width: 31%;
+    height: 120px;
+    margin: 15px 0px 0px 15px;
+    }
+.top_chart_content_wrapper{
+    width: 98%;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1050px){
+    .top_charts_inner_name a{
+        font-size:14px;
+    }
+    .top_chart_content_wrapper{
+    width: 99%;
+    }
+ .top_charts_inner{
+    width: 32.5%;
+     margin: 15px 0px 0px 5px;
+    }
+}
+@media screen and (min-width:676px) and (max-width:950px){
+    .top_charts_inner_name a{
+        font-size:15px;
+    }
+    .top_charts_inner{
+    width: 44%;
+    margin: 15px 0px 0px 25px;
+    }
+}
+@media screen and (min-width:200px) and (max-width:675px){
+    .top_charts_inner{
+    width: 64%;
+    margin: 15px 0px 0px 75px;
+    }
+.top_chart_content_wrapper{
+    width: 95%;
+
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:675px){
+    .top_charts_inner{
+    width: 64%;
+    margin: 15px 0px 0px 75px;
+    }
+}
+/* ==== top chart part media query  end */
+
+/* ==== browse page media query */
+@media screen and (min-width:800px) and (max-width:1000px){
+    .hindi_albums{
+    width: 17.8%;
+    height: auto;
+    background-color: #0E0D0D;
+    float: left;
+    margin: 30px 0px 0px 1.65%;
+    border:1px solid #0E0D0D;
+    position: relative;
+    }
+}
+@media screen and (min-width:500px) and (max-width:799px){
+    .hindi_albums{
+    width: 22.6%;
+    height: auto;
+    background-color: #0E0D0D;
+    float: left;
+    margin: 30px 0px 0px 1.65%;
+    border:1px solid #0E0D0D;
+    position: relative;
+    }
+}
+@media screen and (min-width:150px) and (max-width:499px){
+    .hindi_albums{
+    width: 30.8%;
+    height: auto;
+    background-color: #0E0D0D;
+    float: left;
+    margin: 30px 0px 0px 1.65%;
+    border:1px solid #0E0D0D;
+    position: relative;
+    }
+}
+
+/* ==== browse page media query end*/
+
+/* player media query */
+@media screen and (min-width:900px) and (max-width:1125px){
+    .fixed_player_wrapper_ad{
+        display: none;
+    }
+    .cover{
+        width: 6%;
+    }
+    .control{
+    width: 72%;
+    }
+}
+
+/* category page media query */
+@media screen and (min-width:1100px) and (max-width:1175px){
+    .category_page_discover{
+        width: 15.9%;
+        margin: 15px 0px 15px 29px;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1099px){
+    .category_page_discover{
+        width: 17.7%;
+        margin: 15px 0px 15px 15px;
+    }
+}
+@media screen and (min-width:850px) and (max-width:959px){
+    .category_page_discover{
+        width: 19.5%;
+        margin: 15px 0px 15px 30px;
+    }
+}
+@media screen and (min-width:750px) and (max-width:849px){
+    .category_page_discover{
+        width: 22.5%;
+        margin: 15px 0px 15px 12px;
+    }
+}
+@media screen and (min-width:10px) and (max-width:749px){
+    .middle_bar{
+        width:650px;
+    }
+    .category_page_discover{
+        width: 22.5%;
+        margin: 15px 0px 15px 12px;
+    }
+}

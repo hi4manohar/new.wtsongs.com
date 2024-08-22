@@ -1,0 +1,23 @@
+@import url("main_top.css");
+/* reset form */
+@import url("reset_pass.css");
+/* search style */
+@import url("search.css");
+/*  media query part */
+@import url("staticpage.css");
+/* addtopopus */
+@import url("addtopop.css");
+/* images.css */
+@import url("images.css");
+/* another popup css after sharepopup */
+@import url("contentpopup.css");
+/*  media query part */
+@import url("wt_mediaquery.css");
+/*  media query part */
+@import url("edit_playlist.css");
+/* user css */
+@import url("userProfiles.css");
+/* image upload */
+@import url("image.upload.css");
+/* for loader */
+@import url("main.css");

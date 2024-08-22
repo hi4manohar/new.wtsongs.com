@@ -1,0 +1,3260 @@
+html, body, div, p, ul, li, h1, h2, h3, h4, h5, h6, ol, img, input, select, textarea, form, span, a, cite, header, nav, footer, section, article, hgroup {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: museo_sans300;
+    src: url(http://www.wtsongs.com/assets/fonts/museosans-300-webfont.woff);
+}
+@font-face {
+    font-family: museo_sans700;
+    src: url(http://www.wtsongs.com/assets/fonts/museosans_700-webfont.woff);
+}
+@font-face {
+    font-family: museo_sans300;
+    src: url(http://www.wtsongs.com/assets/fonts/museosans-100-webfont.woff);
+}
+@font-face {
+    font-family: museo_sans700;
+    src: url(http://www.wtsongs.com/assets/fonts/museosans_500-webfont.woff);
+}
+body {
+    background-color: #000;
+    font-family: 'museo_sans700';
+}
+/* ================ header part css start ========= */
+
+.top_header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #4d4c4c;
+    position: fixed;
+    background-color: #000;
+    z-index: 5;
+}
+.topLogo{
+    width: 10%;
+    height:50px;
+    margin-left: 15px;
+    margin-top: 5px;
+    float: left;
+}
+.topLogo img{
+    width: 100%;
+    height: 50px;
+}
+.top_header h1 {
+    color: #f00;
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: bold;  
+}
+.formBox{
+    width:522px;
+    height: 32px;
+    float: left;
+    margin: 15px 0px 0px 20px;
+    position: fixed;
+    margin-left:13%;
+}
+#search_form{
+    width: 100%;
+    height: 32px;
+}
+input:focus {
+    outline: 0;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+/* FF 4-18 */
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+/* FF 19+ */
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+/* IE 10+ */
+
+#search_form input[type=text] {
+    font-family: 'museo_sans700';
+    width: 500px;
+    height: 30px;
+    background-color: #252323;
+    float: left;
+    border: 1px solid #4d4c4c;
+    position: fixed;
+}
+#search_form input[placeholder] {
+    color: #fff;
+    font-size: 16px;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+#search_form input[type=text]:hover {
+    background-color: #4b4a4a;
+}
+#search_form input[type=submit] {
+    width: 100px;
+    height: 32px;
+    background-color: #252323;
+    float: left;
+    border: 1px solid #4d4c4c;
+    margin: 10px 0px 0px 10px;
+    cursor: pointer;
+    color: #4d4c4c;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+#search_form input[type=submit]:hover {
+    background-color: #4b4a4a;
+    color: #c0c2c2;
+}
+#search_form input[value] {
+    padding-bottom: 2px;
+}
+.loginBox {
+    width:155px;
+    height: 60px;
+    float: right;
+    cursor: pointer;
+}
+.login_icon_container{
+    width:70px;
+    height: 60px;
+    float: left;
+
+}
+.free_app_icon_container{
+    width:70px;
+    height: 60px;
+    float: left;
+    margin-left:5%;
+
+}
+.login_icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px 0px 0px 20px;
+}
+.login_text{
+    color: #fff;
+    font-size: 11px;
+    opacity: .5;
+}
+.login_icon_container:hover .login_text{
+    opacity: 1;
+}
+.free_app_icon{
+    width: 30px;
+    height: 30px;
+    padding: 5px 0px 0px 20px;
+}
+.mobile_app_text{
+    color: #fff;
+    font-size: 11px;
+    padding-left: 2px;
+    opacity: .5;
+}
+.free_app_icon_container:hover .mobile_app_text{
+    opacity: 1;
+}
+
+/* ======== top header part css end ====*/
+.main_container{
+    width: 100%;
+    height: auto;
+
+}
+.left_side_bar {
+    width: 6.5%;
+    height: 700px;
+    float: left;
+    margin-top: 60px;
+    position: fixed;
+}
+.left_side_bar ul {
+    list-style-type: none;
+}
+.left_side_bar ul li {
+    color: #fff;
+    float: left;
+    border-left: 2px solid #000;
+    opacity: .6;
+    margin-top: 10px;
+}
+.left_side_bar ul li:hover {
+    opacity: 1;
+    border-left: 2px solid #f00;
+}
+.left_side_bar li a {
+    font-size: 14px;
+    color: #f00;
+    line-height: 10px;
+    text-decoration: none;
+    padding-left: 20px;
+    margin-right: 15px;
+}
+img.home_icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+}
+.home,
+.popular,
+.albums,
+.category,
+.browse,
+.playlist,
+.favourites,
+.help {
+    width: 80px;
+    height: 45px;
+    margin-bottom: 5px;
+    /*background-color: #fff; */
+}
+span.home_text {
+    text-align: center;
+    display: block;
+    font-size: 11px;
+    color: #e4e4e4;
+}
+/* ================ left side bar part css end ========= */
+
+/* ========== banner  part css start ========*/
+
+.middle_bar {
+    width: 85%;
+    height: auto;
+    border-right: 1px solid #4d4c4c;
+    float: left; 
+    margin-top: 60px;
+    position: relative;
+    border-left: 1px solid #4d4c4c;
+    overflow: hidden;
+}
+
+.top_banner {
+    width:100%;
+    height: 80px;
+    background-color: #000;
+}
+
+.top_banner img {
+    width: 728px;
+    height: 71px;
+    margin-bottom:5px;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #4d4c4c;
+    background-color: #000;
+    float: left;
+}
+.nav ul {
+    list-style-type: none;
+}
+.nav ul li {
+    float: left;
+}
+.nav ul li:hover {} .nav li a {
+    font-family: 'museo_sans700';
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    line-height: 35px;
+    text-decoration: none;
+    margin-left: 30px;
+    opacity: .5;
+}
+.nav li a:hover {
+    color: #f00;
+    border-bottom: 4px solid #f00;
+    opacity: 1;
+}
+/* ========== banner  part css end ========*/
+
+/* ======recommended css start ========*/
+ .recommended_songs{
+    width: 100%;
+    height: 220px;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+ }
+ .recommended_heading{
+    color: #9ca1a2;
+    font-family: 'museo_sans700';
+    padding:20px 10px 5px 30px;
+    font-size: 20px;
+ }
+ .recommended_heading a{
+    color: #9ca1a2;
+    text-decoration: none;
+ }
+ .recommended_heading a:hover{
+    text-decoration: underline;
+ }
+ .recommended_corousal{
+    width: 94%;
+    height: 150px;
+    margin: 10px 30px 0px 30px;
+    position: relative;
+    overflow: hidden;
+ }
+
+ .recommended_corousal_inner{
+    width: 2000px;
+    height: 150px;
+    display: -webkit-inline-box;
+    display: inline-flex;
+ }
+.recommended{
+    width: 90px;
+    height: 132px;
+    background-color: #242424;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #242424;
+    cursor: pointer;
+    position: relative;
+}
+.recommended:hover{
+    border: 1px solid #625F5F;
+}
+.recommended_player{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    cursor: pointer;
+    display:none;
+    background-size:30px !important;
+}
+
+.recommended_player img{
+    width: 30px;
+    height: 30px;    
+}
+.recommended:hover .recommended_player{
+    display: block;
+}
+.recommended_img{
+    width: 90px;
+    height: 90px;
+}
+.recommended_img img{
+    width: 90px;
+    height: 90px;
+}
+.recommended_movies_details{
+    width:90px;
+    height:30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.recommended_movie_name span{
+    color: #fff;
+    padding: 2px 0px 0px 10px;
+    float: left;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    opacity: .5;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.recommended_movie_name span:hover{
+    opacity: .9;
+}
+.recommended_left_button{
+    width: 30px;
+    height: 135px;
+    top: 0;
+    background-color: #000;
+    position: absolute;
+    display: none;
+    opacity: .6;
+    cursor: pointer;
+}
+.recommended_right_button{
+    width: 30px;
+    height: 135px;
+    background-color: #000;
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.recommended_corousal:hover .recommended_left_button {
+    display: block;
+}
+.recommended_corousal:hover .recommended_right_button {
+    display: block;
+}
+.recommended_prev_button{
+    margin-top: 55px;
+    margin-left: 5px;
+}
+.recommended_next_button{
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+/* ======recommended css end ========*/
+
+/* ========== New released part css start ========*/
+
+.new_releases {
+    width: 100%;
+    height: 280px;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+    background-color: #000;
+}
+.corousal_heading {
+    color: #9ca1a2;
+    font-family: 'museo_sans700';
+    padding:20px 20px 0px 30px;
+    font-size: 20px;
+    
+}
+.corousal_heading a{
+    color: #9ca1a2;
+    text-decoration: none;
+}
+.corousal_heading a:hover{
+    text-decoration: underline;
+}
+.new_releases_corousal {
+    width: 94%;
+    height: 180px;
+    margin: 25px 30px;
+    position: relative;
+    overflow: hidden;
+}
+.left_button {
+    width: 40px;
+    height: 180px;
+    top: 0;
+    background-color: #000;
+    position: absolute;
+    display: none;
+    opacity: .6;
+    cursor: pointer;
+    z-index: 5;
+}
+.new_releases_corousal:hover .left_button {
+    display: block;
+}
+.right_button {
+    width: 40px;
+    height: 180px;
+    background-color: #000;
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 5;
+}
+.new_releases_corousal:hover .right_button {
+    display: block;
+}
+.new_releases_corousal_inner {
+    width: 2000px;
+    height: 180px;
+}
+.latest {
+    width: 108px;
+    height: 178px;
+    background-color: #242424;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #242424;
+    
+}
+.latest:hover{
+    border: 1px solid #625F5F;
+}
+
+.player {
+    display: none;
+}
+
+.player{
+    width:50px;
+    height: 50px;
+    position:absolute;
+    top:35px;
+    margin-left: 40px;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: 30px !important;
+}
+.player img{
+    width: 30px;
+    height: 30px;
+}   
+
+.latest:hover .player {
+    display: block;
+}
+
+.latest_img img {
+    width: 108px;
+    height: 108px;
+   position: relative;
+}
+.movies_details {
+    width: 108px;
+    height: 70px;
+
+}
+.movie_name {
+    width: 108px;
+    height: 32px;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+.movie_name a {
+    color: #fff;
+    font-size: 13px;
+    opacity: .7;
+    padding-left: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.movie_name a:hover{
+    color: #ccc;
+}
+
+.artist {
+    width: 108px;
+    height: 30px;
+    overflow: hidden;
+    padding-top:3px;
+}
+.artist a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 10px;
+    display: block;
+    opacity: .6;
+    text-transform: capitalize;
+}
+
+.artist a:hover{
+   color:#ccc; 
+}
+
+/* ========== New released part css end ========*/
+.next_button{
+    width: 20px;
+    height: 30px;
+    opacity: 1;
+    margin-top: 75px;
+    margin-left: 10px;
+}
+.prev_button{
+    width: 17px;
+    height: 30px;
+    opacity: 1;
+    margin-top: 75px;
+    margin-left: 10px;
+}
+/* next and prev arrow  css start */
+
+/* featured_playlist  css start */
+.featured_playlist{
+    width: 100%;
+    height: 370px;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+}
+.featured_playlist_corousal{
+    width: 94%px;
+    height: 270px;
+    margin: 25px 30px;
+    position: relative;
+    overflow: hidden;
+   
+}
+.featured_playlist_corousal_inner{
+     width: 2000px;
+    height: 270px;  
+}
+.featured_playlist_left_button{
+    width: 40px;
+    height: 270px;
+    top: 0;
+    background-color: #000;
+    position: absolute;
+    display: none;
+    opacity: .6;
+    cursor: pointer;
+}
+.featured_playlist_corousal:hover .featured_playlist_left_button{
+    display: block;
+}
+.featured_playlist_right_button{
+    width: 40px;
+    height: 270px;
+    background-color: #000;
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.featured_playlist_left_button .prev_button img{
+    margin-top: 45px;
+}
+.featured_playlist_right_button .next_button img{
+    margin-top: 45px;
+}
+.featured_playlist_corousal:hover .featured_playlist_right_button{
+    display: block;
+}
+.fe_playlist{
+    width: 260px;
+    height: 268px;
+    float: left;
+    background-color: #242424;
+    margin-right: 20px;
+    border: 1px solid #242424;
+}
+.fe_playlist:hover{
+    border: 1px solid #625F5F; 
+}
+.fe_playlist_inner{
+    width: 240px;
+    height: 248px;
+    margin: 10px;
+}
+.bollywood_top_50{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 8px;
+}
+.bollywood_top_50:hover .bollywood_top_50_player_img{
+    display: block;
+}
+.bollywood_top_50_img{
+    width: 90px;
+    height: 90px;
+    float: left;
+    border-radius: 50%;
+}
+.bollywood_top_50_player_img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    cursor: pointer;
+    display:none;
+    background-size: 30px !important;
+}
+.bollywood_top_50_player_img img{
+    width: 30px;
+    height: 30px;    
+}
+.bollywood_top_50_img img{
+    width: 90px;
+    height: 90px;
+    float: left;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bollywood_top_50_heading{
+    width: 55%;
+    height: auto;
+    float:left;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.bollywood_top_50_heading a{
+    color: #fff;
+    padding: 6px 0px 0px 10px;
+    float: left;
+    text-decoration: none;
+    font-family: 'museo_sans700';
+    font-size: 14px;
+    opacity: .8;
+}
+.bollywood_top_50_heading a:hover{
+    text-decoration:underline;
+    opacity: 1;
+}
+.bollywood_top_50_favorite{
+    width: 55%;
+    height: auto;
+    float: left;
+}
+.bollywood_top_50_favorite p{
+    color: #fff;
+    padding: 0px 0px 0px 10px;
+    float: left;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    line-height: 17px;
+    opacity: .5;
+}
+.bollywood_top_50_favorite p:hover{
+        opacity: .8;
+}
+.first_song{
+    width: 100%;
+    height: 50px;
+}
+.song_player{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 0px;
+    cursor: pointer;
+    background-size: 25px !important;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.song_player img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    opacity: .5;
+}
+.song_player img:hover{
+    opacity: 1;
+}
+.song_name{
+    width: 69%;
+    height: 25px;
+    float: left;
+    overflow: hidden;
+}
+.song_name a{
+    color: #fff;
+    padding: 10px 0px 0px 5px;
+    float: left;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    opacity: .7;
+    text-decoration: none;
+}
+.song_name a:hover{
+    opacity: 1;
+}
+.song_movie_name{
+    width: 64%;
+    height: 20px;
+    float: left;
+    margin-right: 2px;
+    margin-left: 5px;
+    overflow: hidden;
+    padding-top:0px;
+}
+.song_artist{
+    width: 128px;
+    height: 20px;
+    float: left;
+    padding-top:0px;
+    overflow: hidden;
+}
+.song_artist a{
+    color: #fff;
+    padding: 1px 0px 0px 0px;
+    font-family: 'museo_sans700';
+    font-size: 10px;
+    opacity: .5;
+    text-decoration: none;
+}
+.song_movie_name a{
+    color: #fff;
+    padding: 1px 0px 0px 2px;
+    font-family: 'museo_sans700';
+    font-size: 10px;
+    opacity: .5;
+    text-decoration: none;
+}
+.song_artist a:hover{
+    opacity: .8;
+    text-decoration: underline;
+}
+.song_movie_name a:hover{
+    text-decoration: underline;
+    opacity: .8;
+}
+.second_song{
+    width: 100%;
+    height: 50px;
+}
+.song_player{}
+.song_name{}
+.song_artist{}
+.see_all{
+    width: 240px;
+    height:52px;
+}
+.see_all_button{
+    width: 100px;
+    height: 30px;
+    background-color: #000;
+    margin: 10px 0px 0px 65px;
+    float: left;
+    border-radius: 30px;
+}
+.see_all_button p{
+    color: #fff;
+    padding: 5px 0px 0px 25px;
+    float: left;
+    font-family: 'museo_sans700';
+    font-size: 16px;
+    opacity: .5;
+    text-decoration: none;
+}
+.see_all_button p:hover{
+    opacity: .8;
+}
+hr{
+    height: 1px;
+    background-color: #625F5F;
+    opacity: .2;
+    margin: 0 auto;
+    width: 90%
+}
+
+
+/* featured_playlist  css end */
+
+/*=================discovr part css start ========*/
+.discover_container{
+    width: 100%;
+    height: 240px;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+}
+.discover_heading{
+    color: #9ca1a2;
+    font-family: 'museo_sans700';
+    padding:20px 10px 5px 30px;
+    font-size: 20px;
+}
+.discover_heading a{
+    color: #9ca1a2;
+    text-decoration: none;
+}
+.discover_heading a:hover{
+    text-decoration: underline;
+}
+.discover_corousal{
+    width: 94%;
+    height: 150px;
+    margin: 10px 30px;
+    position: relative;
+    overflow: hidden;
+}
+.discover_corousal_inner{
+    width: 2000px;
+    height: 150px;
+}
+.discover{
+    width: 148px;
+    height: 148px;
+    float: left;
+    background-color: #242424;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #242424;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.discover:hover{
+    border: 1px solid #625F5F;
+}
+.discover img{
+    width: 148px;
+    height: 148px;
+    opacity: .2;
+    border-radius: 50%;
+}
+.discover img:hover{
+    opacity: .4;
+
+}
+.discover_type{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.discover:hover img{opacity: .4;}
+.discover_type a{
+    color: #fff;
+    padding: 15px 0px 0px 0px;
+    font-family: 'museo_sans700';
+    font-size: 17px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    opacity: .8;
+}
+.discover_left_button{
+    width: 30px;
+    height: 150px;
+    top: 0;
+    background-color: #000;
+    position: absolute;
+    display: none;
+    opacity: .6;
+    cursor: pointer;
+}
+.discover_right_button{
+    width: 30px;
+    height: 150px;
+    background-color: #000;
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.discover_corousal:hover .discover_left_button{
+    display: block;
+}
+.discover_corousal:hover .discover_right_button {
+    display: block;
+}
+.discover_prev_button{
+    margin-top: 55px;
+    margin-left: 5px;
+}
+.discover_next_button{
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+/*=================discovr part css end ========*/
+/*===========facebook login css start ============*/
+.facebook_login_container{
+    width: 100%;
+    height: 125px;
+    background-color: #000;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+    border-top: 1px solid #4d4c4c;
+}
+.facebook_login{
+    width: 100%;
+    height: 60px;
+    margin:0 auto;
+    margin-top:30px;
+}
+.facebook_login p{
+    color: #fff;
+    float: left;
+    font-family: 'museo_sans300';
+    font-size: 150%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 70px;
+}
+.fb_login_button{
+    background-color:#2a388f;
+    width: 250px;
+    height: 40px;
+    float: left;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+/* footer nav media query */
+.footer_nav {
+    width: 100%;
+    height: 90px;
+    background-color: #100e0e;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+    margin-bottom: 80px;
+}
+.footer_nav_left {
+    width: 67%;
+    height: 90px;
+    background-color: #000;
+    float: left;
+}
+.footer_menu {
+    width: 100%;
+    height: 70px;
+}
+.footer_menu li a {
+    color: #ccc;
+    font-family: 'museo_sans700';
+    font-size: 11px;
+    text-decoration: none;
+    display: block;
+    padding-top: 15px;
+    padding-left: 24px;
+}
+.footer_nav_left p {
+    color: #828586;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    text-align: center;
+    float: left;
+    padding-left: 100px;
+}
+.footer_nav_right {
+    width: 33%;
+    height: 90px;
+    float: right;
+    background-color: #000;
+}
+.fb_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2b3990;
+    float: left;
+    margin-left: 2px;
+    opacity: .5;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-position: -2px -2px;
+}
+.tw_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #27aae1;
+    float: left;
+    margin-left: 5px;
+    opacity: .5;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-position: -51px -2px;
+}
+.g_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d70912;
+    float: left;
+    margin-left: 5px;
+    opacity: .5;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-position: -105px -5px;
+}
+.in_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1c75bc;
+    float: left;
+    margin-left: 5px;
+    opacity: .5;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-position: -51px -50px;
+}
+/* footer nav media query */
+
+
+.likeUsIcon {
+    width: 29px;
+    height: 32px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+    background-size:130px !important;
+}
+
+.fb_login_button:hover{
+   background-color: #17257c;
+}
+
+a.fb_login_button p{
+    color: #fff;
+    font-family: 'museo_sans700';
+    font-size: 130%; 
+}
+
+p.likeText {
+    padding-left:5px;
+    font-size: 130%;
+    margin-top:-1px !important;
+}
+
+.socalSprit {
+    background: url(http://img.wtsongs.com/images/static/site/socialSprit_200x146.png) no-repeat;
+}
+.wtSprite {
+    background: url(http://img.wtsongs.com/images/static/site/wtSprite_800x800.png) no-repeat;
+}
+/*===========facebook login css end ============*/
+/*================footer part css start========*/
+.footer_container{
+    width: 100%;
+    height: 200px;
+    background-color: #100e0e;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+}
+.artists_link{
+    width:25%;
+    height: 200px;
+    float: left;
+}
+.artists_link p{
+    color: #9ca1a2;
+    font-family: 'museo_sans700';
+    font-size: 16px;
+    padding-left: 30px;
+    padding-top:15px;
+    padding-bottom: 10px; 
+}
+.artists_link ul{
+    list-style-type: none;
+}
+.artists_link ul li{
+    padding-left: 30px;
+}
+.artists_link li a{
+    color: #4f4f4f;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    padding-top: 3px;
+}
+.artists_link li a:hover{
+    color: #ccc;
+    text-decoration: underline;
+}
+/*================footer part css end ========*/
+
+/*================footer nav part css start ========*/
+.footer_nav{
+    width:100%;
+    height: 60px;
+    background-color: #100e0e;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+    margin-bottom: 80px;    
+}
+.footer_nav_left{
+    width: 78%;
+    height: 60px;
+    background-color: #000;
+    float: left;
+}
+.footer_nav_left p{
+    color: #828586;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    text-align: center;
+    padding-left: 40%;
+}
+.footer_menu{
+    width:100%;
+    height: 40px; 
+}
+.footer_menu ul{
+    list-style-type: none;
+}
+.footer_menu ul li{
+    float: left;
+    text-align: center;
+}
+.footer_menu li a{
+    color: #ccc;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    padding-top: 13px;
+    padding-left: 23px;
+}
+.footer_menu li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer_nav_right{
+    width: 22%;
+    height: 60px;
+    float: right;
+    background-color: #000;
+}
+.footer_nav_right p{
+    color: #fff;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    opacity: .5;
+}
+.fb_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2b3990;
+    float: left;
+    margin-left: 2px;
+    opacity: .5;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-position:-2px -2px;
+}
+.fb_icon:hover, .tw_icon:hover, .g_icon:hover, .in_icon:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.tw_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #27aae1;
+    float: left;
+    margin-left: 2px;
+    opacity: .5;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-position:-51px -2px;
+}
+.g_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d70912;
+    float: left;
+    margin-left: 2px;
+    opacity: .5;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-position:-105px -5px;
+}
+.in_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1c75bc;
+    float: left;
+    margin-left: 2px;
+    opacity: .5;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-position: -51px -50px;
+}
+/*================footer nav part css end ========*/
+
+/* text dots css */
+.dotes {
+    text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    color:white;
+}
+/* text dotes css end */
+
+
+/* ============== category page css start ==== */
+
+.category_page_container{
+    width: 100%;
+    height: auto;
+    background-color: #100d0d;
+}
+.category_page_heading{
+    width: 100%;
+    height:60px;
+    border-bottom: 1px solid #4d4c4c;
+}
+.category_page_heading a{
+    text-decoration: none;
+    color: #d1d1d1;
+    font-family: 'museo_sans700';
+    padding:19px 0px 0px 25px;
+    font-size: 24px;
+    float: left;
+    display: block; 
+}
+.category_page_corousal{
+    width: 99%;
+    margin: 0 auto;
+    height: auto;
+}
+.category_page_discover{
+    width: 14.9%;
+    height: 146px;
+    float: left;
+    background-color: #393535;
+    border-radius: 50%;
+    border: 1px solid #443535;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 15px 0px 15px 13px;
+}
+.category_page_discover:hover{
+    border: 1px solid #625F5F;
+}
+.category_page_discover img{
+    width: 100%;
+    height: 148px;
+    opacity: .2;
+    border-radius: 50%;
+}
+.category_page_discover img:hover{
+    opacity: .4;
+
+}
+.category_page_discover:hover img{
+    opacity: .4;
+}
+.category_page_discover_type{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.category_page_discover_type a{
+    color: #fff;
+    padding: 15px 0px 0px 0px;
+    font-family: 'museo_sans700';
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/* ============== category page css end ==== */
+
+
+/* ============== browse page css start ==== */
+.browse_page_container{
+    width: 100%;
+    height:auto;
+    background-color: #100d0d;
+}
+.browse_page_nav1{
+    width: 100%;
+    height:50px;
+    border-bottom: 1px solid #4d4c4c;
+}
+.browse_page_nav1 ul{
+    list-style-type: none;
+}
+.browse_page_nav1 ul li{
+    float: left;
+}
+.browse_page_nav1 li a{
+    display: block;
+    text-decoration: none;
+    color: #797878;
+    font-size: 14px;
+    font-family: 'museo_sans700';
+    line-height: 47px;
+    margin: 0px 20px;
+    text-transform: uppercase;
+}
+.browse_page_nav1 li a:hover{
+    color: #fff;
+    border-bottom: 3px solid #f00;
+}
+
+.browse_page_nav2{
+    width: 100%;
+    height:50px;
+    border-bottom: 1px solid #4d4c4c;
+}
+.browse_page_nav2 ul{
+    list-style-type: none;
+}
+.browse_page_nav2 ul li{
+    float: left;
+}
+.browse_page_nav2 li a{
+    display: block;
+    text-decoration: none;
+    color: #797878;
+    font-size: 11px;
+    font-family: 'museo_sans700';
+    line-height: 47px;
+    margin: 0px 0px 0px 15px;
+    text-transform: uppercase;
+}
+.browse_page_nav2 li a:hover{
+    color: #fff;
+ 
+}
+.browse_page_corousal_top{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #4d4c4c;
+    background-color: #000;
+    float: left;
+}
+.select{
+    width: 160px;
+    height: 25px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    opacity: .5;
+}
+.select option{
+    width: 130px;
+    height: 20px;
+    border: none;
+}
+.browse_page_corousal{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #4d4c4c;
+}
+.browse_content_wrapper{
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+}
+.hindi_albums{
+    width: 13.5%;
+    height: auto;
+    background-color: #0E0D0D;
+    float: left;
+    margin: 30px 0px 0px 2.53%;
+    border:1px solid #0E0D0D;
+    position: relative;
+}
+.hindi_albums:hover{
+    border:1px solid #4d4c4c;
+    cursor: pointer;
+}
+.hindi_albums:hover .hindi_albums_player{
+    display: block;
+}
+/*
+.hindi_albums:hover .like_us{
+    display: block;
+}
+*/
+.hindi_albums_img{
+    width:100%;
+    height: 135px;
+    overflow: hidden;
+}
+.hindi_albums_img img{
+    width: 100%;
+    height: 100%;
+}
+.hindi_albums_movies_details{
+    width:100%;
+    height:55px;
+}
+.hindi_albums_movies_details:hover .like_us{
+
+}
+.hindi_albums_movie_name{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.hindi_albums_movie_name a{
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 12px;
+    font-family: 'museo_sans700';
+    text-transform: capitalize;
+    padding: 5px 0px 0px 10px;
+    overflow: hidden;
+    max-height: 28px;
+    min-height: 20px;
+}
+.hindi_albums_movie_name a:hover{
+    color: #fff;
+    opacity: 1;
+}
+.hindi_albums_artist{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    height: 17px;
+}
+.hindi_albums_artist a{
+    height: 10px;
+    display: block;
+    text-decoration: none;
+    color: #797979;
+    font-size: 10px;
+    font-family: 'museo_sans700';
+    text-transform: capitalize;     
+}
+.hindi_albums_artist a:hover{
+    color:#797979;
+}
+.hindi_albums_player{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    display:none;
+    cursor: pointer;
+    background-size: 100% !important;
+    opacity: .7;
+}
+.hindi_albums_player img{
+    width: 30px;
+    height: 30px;
+}
+
+/* playPause Sprit */
+.play_album {
+    background: url(http://img.wtsongs.com/images/static/site/player_icon2.png) no-repeat;
+    cursor: pointer;
+}
+
+.noChangePlayButton {
+    background: url(http://img.wtsongs.com/images/static/site/player_icon2.png) no-repeat;
+}
+
+.pause_album {
+    background: url(http://img.wtsongs.com/images/static/site/player_icon2.png) no-repeat;
+}
+
+.stopPlayControl {
+    background: url(http://img.wtsongs.com/images/static/site/stop_icon.png) no-repeat;
+}
+
+.like_us{
+    width: 145px;
+    height: 30px;
+    background-color: #2f2e2e;
+    position: absolute;
+    display: none;
+    top: 115px;
+    left: 0;
+}
+/* ============== browse page css end ==== */
+.right_side_bar{
+    width:13.6%;
+    height: 600px;
+    float: right;
+    opacity: .9;
+    margin-top: 63px;
+    background-image: url(http://img.wtsongs.com/images/static/site/ad_image.png);
+    margin-right: 8px;
+    right:-3px;
+    position: fixed;
+}
+
+/* ===============  top charts css start ====== */
+.top_charts_container{
+    width: 100%;
+    height: auto;
+}
+.top_chart_content_wrapper{
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+}
+.top_charts_inner{
+    width: 29%;
+    height: 120px;
+    background-color: #292929;
+    float: left;
+    margin: 15px 0px 10px 31px;
+}
+.top_charts_inner_img{
+    float: left;
+    width:36.4%;
+    height: 100px;
+    background-color:#000;
+    border-radius: 50%;
+    margin: 10px 0px 0px 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.top_charts_inner_img img{
+    width: 100%;
+    height: 100px;
+}
+.top_charts_inner_img:hover .top_charts_inner_player{
+    display: block;
+}
+.top_charts_inner_details{
+    width:59%;
+    height: 90px;
+    margin: 10px 0px 0px 0px;
+    float: left;
+    overflow: hidden;
+}
+.top_charts_inner_name{
+    width: 100%;
+    height: 50px;
+}
+.top_charts_inner_name a{
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 17px;
+    font-family: 'museo_sans700';
+    text-transform: capitalize;
+    padding: 10px 0px 0px 10px;
+}
+.top_charts_inner_name a:hover{
+    text-decoration: underline;
+}
+.top_charts_inner_name_details{
+    width: 100%;
+    height: 40px;
+}
+.top_charts_inner_name_details a{
+    display: block;
+    text-decoration: none;
+    color: #797979;
+    font-size: 13px;
+    font-family: 'museo_sans700';
+    text-transform: capitalize;
+    padding: 3px  10px 0px 10px;
+}
+.top_charts_inner_player{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 34%;
+    left: 37%;
+    cursor: pointer;
+    display: none;
+    background-size: 30px !important;
+}
+.top_charts_inner_player img{
+    width: 30px;
+    height: 30px;
+}
+
+/* ===============  top charts css end ====== */
+/* ================  pagination css start ====*/
+.pagination_container{
+    width: 100%;
+    height:40px;
+    float: left;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.pagination_container_inner{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #f00;
+    border-radius: 20px;
+}
+
+/* ================  pagination css end ====*/
+/* ==========Playlist page css start =============*/
+.playlist_page_nav {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #4d4c4c;
+    background-color: #111111;
+}
+.playlist_page_nav ul {
+    list-style-type: none;
+}
+.playlist_page_nav ul li {
+    float: left;
+}
+.playlist_page_nav li a {
+    font-family: 'museo_sans700';
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    line-height: 48px;
+    text-decoration: none;
+    margin-left: 30px;
+    opacity: .5;
+}
+.playlist_page_nav li a:hover {
+    color: #f00;
+    border-bottom: 2px solid #f00;
+    opacity: 1;
+}
+.playlist_page{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.playlist_content_wrapper{
+    width: 99%;
+    height: auto;
+    margin: 0 auto;
+}
+.playlist_main{
+    width: 23.5%;
+    height: auto;
+    float: left;
+    background-color: #1E1E1E;
+    margin: 15px 0px 0px 10px;
+    border: 1px solid #1E1E1E;
+}
+.playlist_main:hover{
+    border: 1px solid #625F5F; 
+}
+.playlist_main_inner{
+    width: 100%;
+    height: auto;
+}
+.fb-page{
+    width: 90px;
+}
+/* ==========Playlist page css end =============*/
+
+/* ========== album part css start ====*/
+.album_header_containner{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(30deg,#0D483F 60%, #55100D 30%, #1095A6 100%);
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+}
+.album_containner_inner{
+    width: 95%;
+    height: 175px;
+    margin:2.5% 0% 2.5% 2.5%;
+    color: #DBCFCF;
+}
+.album_containner_inner_img{
+    height: 175px;
+    width: 175px;
+    float: left;
+    position: relative;
+}
+.album_containner_inner_img img{
+        width: 100%;
+        height: 100%;
+    }
+.album_containner_details{
+    width: 50%;
+    height: 175px;
+    float: left;
+    margin-left: 20px;
+}
+
+.album_details{
+    width: 100%;
+    height: 175px;
+    float: left;
+}
+.album_details_right{
+    width: 20%;
+    height: 175px;
+    float: right;
+}
+
+.right_notify {
+    height: 140px;
+    background-color: #501A18;
+    margin-top: 18px;
+    margin-top: 18px;
+    width: 188px;
+}
+
+.notif_box {
+    width: 180px;
+    padding: 10px;
+}
+ 
+.like_follow{
+    width: 100%;
+    height: 30px;
+    background-color: #f00;
+    float: left;
+}
+.like_icon{
+    width: 100px;
+    height: 30px;
+    background-color: #f0f;
+    float: left;
+}
+.follow_icon{
+    width: 100px;
+    height: 30px;
+    background-color: #f0f;
+    float: left;
+}
+.album_name{
+    font-family: 'museo_sans300';
+    font-size: 30px;
+    color: #ccc;
+    width: 450px;
+    height: 35px;
+    overflow: hidden;
+    font-weight: 700;
+}
+.album_by{
+    width:300px;
+    height: 25px;
+    color: #B5B1B1;
+    font-family: 'museo_sans700';
+    font-size: 14px;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.album_by a{
+    font-family: 'museo_sans700';
+    font-size: 14px;
+    color: #dddddd;
+    overflow: hidden;
+    text-decoration: none;
+}
+.album_by a:hover{
+    text-decoration: underline;
+}
+.album_length{
+    width:300px;
+    height: 20px;
+    color: #B5B1B1;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    overflow: hidden;
+    margin-top: 5px;
+    float: left;
+}
+.album_singer{
+    width:300px;
+    height: 20px;
+    color: #B5B1B1;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    overflow: hidden;
+}
+.album_singer a{
+    font-family: 'museo_sans700';
+    font-size: 14px;
+    color: #dddddd;
+    overflow: hidden;
+    text-decoration: none;
+}
+.album_favorites{
+    width:300px;
+    height: 20px;
+    color: #ccc;
+    font-family: 'museo_sans700';
+    font-size: 13px;
+    overflow: hidden;
+}
+.button{
+    width: 450px;
+    height: 35px;
+    margin-top: 10px;
+}
+.download_button{
+    width: 100px;
+    height: 30px;
+    background-color: #3C3737;
+    border:1px solid #6D6B6B;
+    border-radius: 3px;
+    float: left;
+    border-radius: 30px;
+    padding: 0px 10px;
+}
+.downloadIcon {
+    background: url(http://img.wtsongs.com/images/static/site/download_image.png) no-repeat;
+    background-position:10px;
+}
+.download_button:hover{
+    border:1px solid #ccc;
+    cursor: pointer;
+}
+.comment_button{
+    width: 100px;
+    height: 30px;
+    background-color: #3C3737;
+    border:1px solid #6D6B6B;
+    border-radius: 3px;
+    float: left;
+    margin-left: 15px;
+    border-radius: 30px;
+    padding: 0px 10px;
+    background-position: -5px -468px;
+   
+}
+.commentIcon {
+    background: url(http://img.wtsongs.com/images/static/site/comment_button.png) no-repeat;
+    background-position:10px;
+}
+.comment_button:hover{
+    border:1px solid #ccc;
+    cursor: pointer;
+}
+.favorite{
+    width: 30px;
+    height: 30px;
+    margin-left:15px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .4;
+    background-color: #3C3737;
+    background-position: 10px;
+}
+.favouriteIcon {
+    background: url(http://img.wtsongs.com/images/static/site/favorites_icon1.png) no-repeat;
+    background-position: 5px;
+}
+.favorite:hover{
+    opacity: 1;
+}
+.favorite img{
+    margin-top: 8px;
+    margin-left: 7px;
+}
+.add{
+    width: 30px;
+    height: 30px;
+    margin-left:10px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .4;
+    background-color: #3C3737;
+    background-position: 10px;
+}
+.addIcon {
+    background: url(http://img.wtsongs.com/images/static/site/add_icon1.png) no-repeat;
+    background-position: 4px;
+}
+.add:hover{
+    opacity: 1;
+}
+.add img{
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.share{
+    width: 30px;
+    height: 30px;
+    margin-left:10px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .4;
+    background-color: #3C3737;
+    background-position: 10px;
+}
+.shareIcon {
+    background: url(http://img.wtsongs.com/images/static/site/share_icon1.png) no-repeat;
+    background-position: 6px;
+    background-size: 15px;
+}
+.share:hover{
+    opacity: 1;
+}
+.share img{
+    width: 20px;height: 20px;
+    margin-top: 7px;margin-left: 6px;
+}
+.album_songs_containner{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #4d4c4c;
+    float: left;
+}
+.album_songs_containner_inner{
+    width: 100%;
+    height:auto;
+    float: left;
+    min-height: 300px;
+}
+
+/* ============= identity part ==========*/
+.album_identity{
+    width: 100%;
+    height: 45px;
+    float: left;
+    margin-bottom: 10px;
+}
+.album_identity_inner{
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+}
+.identity_name, .identity_artits_name{
+    width: 30%;
+    float: left;
+}
+.identity_name span{
+    color: #c4c4c4;
+    font-family: 'museo_sans700';
+    font-size: 15px;
+    padding-top: 0px;
+    padding-left:110px; 
+    float: left;
+}
+li.identity_name img, li.identity_popularity img, li.identity_artits_name img, li.identity_actions img {
+    width: 15px;
+    height: 15px;
+    margin-top: 7px;
+    margin-left: 3px;
+}
+.identity_artits_name span{
+    color: #c4c4c4;
+    font-family: 'museo_sans700';
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-left: 75px;
+    float: left;
+}
+.identity_popularity, .identity_actions{
+    width: 20%;
+    float: left;
+}
+.identity_popularity span{
+    color: #c4c4c4;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    float: left;
+}
+.identity_actions span{
+    color: #c4c4c4;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-left: 75px;
+    float: left;
+}
+/* ============= identity part ==========*/
+
+.album_songs_containner_inner .album_track{
+    width: 100%;
+    height: 50px;
+    float: left;
+    margin-bottom: 10px;
+}
+.album_track:hover .track_player{
+    opacity: 1;
+}
+.album_track:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.album_track_inner{
+    width: 100%;
+    height: 50px;
+}
+ul{
+    list-style-type: none;
+}
+li a{text-decoration: none;}
+.track_name{
+    width: 30%;
+    float: left;
+}
+.track_player{
+    width: 30px;
+    height: 30px;
+    float: left;
+    opacity: .5;
+    background-size: 25px;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+.track_player:hover{
+    opacity: 1;
+}
+.track_name a p{
+    color: #E0CFCF;
+    font-size: 13px;
+    padding-top:9px;
+    padding-left:5px;
+    width: 68%;
+    overflow: hidden;
+}
+.album_page_track_name{
+    color: #BBB9B9;
+    font-size: 13px;
+    padding-top: 17px !important;
+}
+.track_name a h3{
+    color: #BBB9B9;
+    font-size: 12px;
+    padding-top: 3px;
+    margin-left: 5px;
+    font-weight: inherit;
+    float: left;
+    opacity: .5;
+    width:65%;
+}
+.track_name a h3:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.artits_name{
+    width: 30%;
+    float: left;
+    height: 40px;
+    overflow: hidden;
+}
+.artits_name a{
+    color: #ccc;
+    font-size: 14px;
+    padding-top: 16px;
+    height: 40px;
+    opacity: .5;
+}
+.float{
+    margin-top:13px;
+}
+.artits_name a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.popularity img{
+   width: 25px;
+   height: 25px;
+   float: left;
+}
+.actions img{
+   width: 25px;
+   height: 25px;
+   float: left;
+}
+.artits_name img{
+   width: 25px;
+   height: 25px;
+   float: left;
+}
+.popularity{
+    width: 20%;
+    float: left;
+}
+.progress_bar{
+    width: 130px;
+    height: 2px;
+    background-color: #808080;
+    margin-left: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+    border:none;
+}
+progress[value]::-moz-progress-bar {
+    background-color: #008000;
+}
+.actions{
+    width: 20%;
+    float: left;
+}
+.action_containner{
+    width: 130px;
+    height: 35px;
+    float: left;
+    margin-left: 33px;
+    margin-top: 10px;
+}
+.downloads_icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    background-color: #3C3737;
+    opacity: .5;
+    cursor: pointer;
+    background-position:-63px -518px;
+    background-size: 800px;
+}
+.downloadsIcon {
+    background:url(http://img.wtsongs.com/images/static/site/downloads_icon1.png) no-repeat;
+    background-size: 15px;
+    background-position: 5px;
+}
+.downloads_icon:hover{
+    opacity: 1;
+}
+
+.addto_playlist {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    background-color: #3C3737;
+    opacity: .5;
+    cursor: pointer;
+    background-position:-51px -651px;
+    background-size: 1000px;
+    position: relative;
+}
+.addToIcons {
+    background:url(http://img.wtsongs.com/images/static/site/add_icon1.png) no-repeat;
+    background-size: 15px;
+    background-position: 5px 4px;
+}
+.addto_playlist:hover{
+    opacity: 1;
+}
+
+.more_icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    background-color: #3C3737;
+    opacity: .5;
+    cursor: pointer;
+    background-position:-82px -384px;
+    background-size: 600px;
+    position: relative;
+}
+.moreIcons {
+    background:url(http://img.wtsongs.com/images/static/site/more_icon.png) no-repeat;
+    background-size: 30px;
+    background-position: -2px;
+}
+.more_icon:hover{
+    opacity: 1;
+}
+
+.album_player{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 60px;
+    opacity: .3;
+}
+.albumPlayerIcon {
+    background:url(http://img.wtsongs.com/images/static/site/player_icon2.png);
+}
+.album_player:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.album_player img{
+}
+/* ========== album part css end ====*/
+/*  =============== fixed player css start ==============*/
+.fixed_player_wrapper{
+    width: 99.8%;
+    height: 80px;
+    background-color: #444242;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}
+.fixed_player_wrapper_ad{
+    width: 20%;
+    height: 80px;
+    background-color: #444242;
+    float: left;
+}
+.fixed_player_wrapper_ad_inner{
+    width: 200px;
+    height: 60px;
+    background-color: #0f0;
+    margin: 10px 25px 10px 25px;
+}
+.cover{
+    width: 4.824%;
+    height: 60px;
+    margin-left:20px;
+    float: left;
+    cursor: pointer;
+    margin-top:12px;
+    background: url(http://img.wtsongs.com/images/static/song_default_80x80.jpg) no-repeat;
+    background-size:60px;
+}
+.cover:hover{
+    opacity: .6;
+}
+.fixed_player_button{
+    width: 14%;
+    height: 60px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 17px;
+}
+.fixed_player_prev_button{
+    width: 25%;
+    height: 40px;
+    margin: 10px 0px;
+    float: left;
+    opacity: .5;
+    margin-left:8%;
+    background-size: 30px !important;
+}
+.backWard {
+    background:url(http://img.wtsongs.com/images/static/site/prev_icon.png) no-repeat;
+}
+.fixed_player_prev_button:hover{
+    opacity: 1;
+}
+.fixed_player_stop_button{
+    width: 25%;
+    height: 50px;
+    margin-left: 8%;
+    float: left;
+    opacity:.5;
+    margin-top: 5px;
+    background-size: 30px !important;
+}
+.stopControl {
+    background:url(http://img.wtsongs.com/images/static/site/fixed_stop_icon.png) no-repeat;
+}
+.fixedPause {
+    background:url(http://img.wtsongs.com/images/static/site/fixed_play_icon.png) no-repeat;
+}
+.audioLoad {
+    background:url(http://img.wtsongs.com/images/static/site/loader.gif) no-repeat;
+}
+.fixed_player_stop_button:hover{
+      opacity: 1;
+}
+.fixed_player_next_button{
+    width: 25%;
+    height: 40px;
+    margin: 10px 0px;
+    float: left;
+    opacity: .5;
+    margin-left: 8%;
+    background-size: 30px !important;
+}
+.foreWard {
+    background:url(http://img.wtsongs.com/images/static/site/next_icon.png) no-repeat;
+}
+.fixed_player_next_button:hover{
+    opacity: 1;
+}
+.control{
+    width: 55%;
+    height: 62px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.meta{
+    width: 100%;
+    height: 25px;
+}
+p.player_track_name{
+    max-width: 58%;
+    height: 25px;
+    float: left;
+    margin-left: 43px;
+}
+.player_track_name a{
+    color: #ccc;
+    font-family: 'museo_sans700';
+    font-size: 13px;
+    float: left;
+    padding-top: 5px;
+    text-decoration: none;
+    width: 100%;
+}
+span.player_album_name {
+    max-width: 38%;
+    height: 25px;
+    float: left;
+}
+.player_album_name{
+    color: #C0C0C0;
+    font-family: 'museo_sans700';
+    font-size: 12px;
+    text-decoration: none;
+    padding-top: 5px;
+}
+.player_songs_details{
+    width: 61%;
+    float: left;
+    height: 20px;
+    overflow-y: hidden;
+}
+.player_album_more{
+    width: 22px;
+    height: 22px;
+    background:url(http://img.wtsongs.com/images/static/site/add_icon1.png) no-repeat;
+    background-position: 2px 2px;
+    background-size: 18px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    opacity: .3;
+}
+.player_album_more:hover{
+    opacity: 1;
+}
+
+.bitrate_drop {
+    top: auto;
+    bottom: 87%;
+    position: absolute;
+    right: 10%;
+    width: 166px;
+    background-color: #4A3F3F;
+    padding: 10px;
+    display: none;
+    color: #CEC1C1;
+}
+
+.small {
+    color: #ADB0BC;
+}
+
+.bitrate_drop .bitrate_text {
+    padding:10px;
+}
+
+.player_album_more:hover .bitrate_drop {
+    display:block;
+}
+
+.current-bitrate {
+    height: 39px;
+    margin-top: -9px;
+    position: absolute;
+    right: -8px;
+    margin-top: 3px;
+    width: 50px;
+    background: url(http://img.wtsongs.com/images/static/site/correct_sign.png) no-repeat;
+    background-size: 40%;
+}
+
+.bitrate_text:hover {
+    background-color: rgb(189, 51, 51);
+}
+
+.bitrate_note {
+    color:white;
+    font-size: 12px;
+    padding-left:10px;
+    cursor: default;
+}
+
+.like_us_also{
+    width: 100px;
+    height: 20px;
+    border-radius:30px;
+    background-color: #fff;
+    float: right;
+    text-align: center;
+    color: #ccc;
+    background-color: #9C6B2B;
+    cursor: pointer;
+}
+.player_album_progreser{
+    width: 100%;
+    height: 25px;
+    float: left;
+    margin-top: 5px;
+}
+.repeat{
+    width:20px;
+    height: 20px;
+    background:url(http://img.wtsongs.com/images/static/site/repeat_icon.png) no-repeat;
+    float: left;
+    border:none;
+    cursor: pointer;
+    opacity: .3;
+    background-size: 100%;
+    margin: 2.5px;
+}
+.repeat:hover{
+    opacity: 1;
+}
+.elipsed_time{
+    width: 30px;
+    float: left;
+    color: #fff;
+    font-family: 'museo_sans700';
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding-top: 7px;
+}
+.progress_gutter{
+    width:60%;
+    float: left;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+.track_time{
+    width: 30px;
+    float: left;
+    color: #fff;
+    font-family: 'museo_sans700';
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 7px;
+}
+.volume_wrapper{
+    width: 12%;
+    height:20px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 15px;
+}
+.volume{
+    margin-top: 5px;
+    width:100%;
+    float: left;
+    border: none;
+    margin-left:2px;
+    cursor: pointer;
+    position: relative;
+}
+.volume .ui-slider-handle{
+    position: absolute;
+    left: 80%;
+    height: 10px;
+    width: 10px;
+    background-color: #f00;
+    top: -4px;
+    border-radius: 50%;
+}
+
+.ui-slider-range {
+    background-color:green;
+    top: 0;
+    height: 2px;
+    border-radius: 40px;
+    background-color: #09FDBE;
+  
+}
+.ui-slider-handle {
+    background-color:#f00;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+}
+.progress_gutter {
+    background-color:#9E9C9C;
+    height:2px;
+    border-radius: 40px;
+    position: relative;
+}
+.pro{
+    width: 100%;
+    border-radius: 40px;
+}
+/*  =============== fixed player css end ==============*/
+/* ==================log in form css start ============*/
+
+.login_form_container{
+    width: 300px;
+    height: auto;
+    background-color:#444141;
+    margin: 0 auto;
+    position: fixed;
+    float: left;
+    margin-top:60px;
+    margin-left:35%;
+    position: absolute;
+    top: 0;left: 0;
+    position: fixed;
+    z-index: 1;
+}
+.top_part{
+    width: 300px;
+    height:30px;
+    margin-bottom: 30px;
+    margin-top:10px;
+}
+.login_form_container h1{
+    font-family:Microsoft Yi Baiti;
+    font-size: 22px;
+    color: #ccc;
+    float: left;
+    margin-top: 5px;
+    padding-left: 25px;
+    float: left;
+}
+.cancel_button{
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+    padding-right:10px;
+    padding-top: 8px;
+}
+.form_wrapper{
+    width: 254px;
+    height:auto;
+    margin:0 auto;
+}
+
+.login_with_fb{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #444141;
+    background-color: #246bff;
+}
+.login_with_fb:hover{
+    border: 2px solid #246bff;
+    cursor: pointer;
+}
+.login_fb_icon{
+    margin-top: 10px;
+    margin-left: 15px;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.login_with_fb h2{
+    font-family:Microsoft Yi Baiti;
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    margin-top: 7px;
+    padding-left: 15px;
+}
+#login_form input[type=text]{
+    width: 240px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #575454;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+#login_form input[type=password]{
+    width: 240px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #575454;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+#login_form input[placeholder]{
+    padding-left: 10px;
+}
+#login_form input[type=submit]{
+    width: 250px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #f00;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+#login_form input[type=checkbox]{
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 18px;
+}
+label{
+    color: #fff;
+}
+#login_form input[type=submit]:hover{
+    background-color: #fd9a19;
+}
+#login_form a{
+    color: #fff;
+    padding-top: 20px;
+    float: left;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 15px;
+}
+#login_form a:hover{
+    text-decoration: underline;
+    color: #a9c4fc;
+}
+.footer{
+    width: 300px;
+    height: 30px;
+    background-color: #1d1d1d;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: arial;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.footer a{
+    color:#0f0;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.divider{
+    width: 250px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.divider p{
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    float: left;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: arial;
+}
+.hr_left{
+    width: 105px;
+    float: left;
+    height: 2px;
+    background-color:#ccc;
+    float: left;
+    margin-top: 8px;
+}
+.hr_right{
+    width: 105px;
+    float: right;
+    height: 2px;
+    background-color:#ccc;
+    float: right;
+    margin-top: 8px;
+}
+/* ============ signup form css start ========== */
+.signup_form_container{
+    width: 300px;
+    height: auto;
+    background-color:#444141;
+    margin: 0 auto;
+    position: fixed;
+    float: left;
+    margin-top:60px;
+    margin-left:28.5%;
+    z-index: 1;
+    top: 0;
+}
+.top_part{
+    width: 300px;
+    height:30px;
+    margin-bottom: 30px;
+}
+.signup_form_container h1{
+    font-family:Microsoft Yi Baiti;
+    font-size: 22px;
+    color: #ccc;
+    float: left;
+    margin-top: 5px;
+    padding-left: 25px;
+    float: left;
+}
+.signup_cancel_button{
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+}
+.signup_cancel_button:hover{
+    background-color: #fff;
+}
+.signup_form_wrapper{
+    width: 254px;
+    height:auto;
+    margin:0 auto;
+}
+
+.signup_with_fb{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #444141;
+    background-color: #246bff;
+}
+.signup_with_fb:hover{
+    border: 2px solid #246bff;
+    cursor: pointer;
+}
+.signup_fb_icon{
+    margin-top: 10px;
+    margin-left: 15px;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.signup_with_fb h2{
+    font-family:Microsoft Yi Baiti;
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    margin-top: 7px;
+    padding-left: 15px;
+}
+#signup_form input[type=text]{
+    width: 240px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #575454;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+#signup_form input[placeholder]{
+    padding-left: 10px;
+}
+#signup_form input[type=password]{
+    width: 240px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #575454;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+#signup_form select{
+    width: 63px;
+    height: 35px;
+    background-color: #575454;
+    color: #ccc;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#signup_form select option{
+    width: 63px;
+    height: 35px;
+    background-color: #575454;
+    color: #ccc;
+}
+#signup_form input[type=submit]{
+    width: 250px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #f00;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+#signup_form input[type=checkbox]{
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 18px;
+}
+label{
+    color: #fff;
+}
+#signup_form input[type=submit]:hover{
+    background-color: #fd9a19;
+}
+#signup_form a{
+    color: #fff;
+    padding-top: 20px;
+    float: left;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 15px;
+}
+#signup_form a:hover{
+    text-decoration: underline;
+    color: #a9c4fc;
+}
+.signup_footer{
+    width: 300px;
+    height: 30px;
+    background-color: #1d1d1d;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: arial;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.signup_footer a{
+    color:#0f0;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: arial;
+}
+.signup_footer a:hover{
+    text-decoration: underline;
+}
+.signup_divider{
+    width: 250px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.signup_divider p{
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    float: left;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: arial;
+}
+.signup_hr_left{
+    width: 105px;
+    float: left;
+    height: 2px;
+    background-color:#ccc;
+    float: left;
+    margin-top: 8px;
+}
+.signup_hr_right{
+    width: 105px;
+    float: right;
+    height: 2px;
+    background-color:#ccc;
+    float: right;
+    margin-top: 8px;
+}
+/* ============ signup form css end ========== */
+.middle_bar_containner{
+    width: 93.5%;
+    margin-left: 80px;
+}
+/* =========== media query css start =========*/
+
+
+/*  ================ cast page css start ======== */
+.album_identity_inner ul{
+    list-style-type: none;
+}
+.album_identity_inner ul li{
+}
+.album_identity_inner li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    font-family: 'museo_sans700';
+    font-size: 14px;
+    float: left;
+    opacity: .5;
+}
+.nav3{margin-left: 20px;}
+.album_identity_inner li a:hover{
+    opacity: 8;
+    text-decoration: underline;
+}
+.total_songs{
+    height: 40px;
+    width: 100%;
+    float: left;
+}
+.total_albums{
+    height: 20px;
+    width: 100%;
+    float: left;
+}
+.total_songs a, .total_albums a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    font-family: 'museo_sans700';
+    font-size: 15px;
+    margin-left: 20px;
+    float: left;
+    opacity: .8;
+}
+.total_songs a:hover, .total_albums a:hover{
+    text-decoration: underline;
+}
+/*  ================ cast page css end ======== */
+
+
+.play_all{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-left: 25px;
+    border:none;
+    float: left;
+    opacity: .8;
+    overflow: hidden;
+}
+.play_all:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* ========= most-popular page css start ======= */
+
+/* ========= most-popular page css end ======= */
+
+/* modal loader */
+.modal {
+    position:   fixed;
+    z-index:    9999999;
+    top:        40%;
+    left:       40%;
+    height:     60px;
+    width:      60px;
+    background: #55100D  url('http://img.wtsongs.com/images/static/site/modal-loader.gif') 50% 50% no-repeat;
+    border-radius: 50%;
+}
+
+.infinite_loader {
+    position:   fixed;
+    z-index:    1000;
+    top:        40%;
+    left:       40%;
+    height:     60px;
+    width:      60px;
+    background: #55100D  url('http://img.wtsongs.com/images/static/site/modal-loader.gif') 50% 50% no-repeat;
+    border-radius: 50%;
+}
+
+
+/*  background   */
+.transparent_img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 200% !important;
+    opacity: 0.5;
+    z-index: -15;
+    background-attachment: scroll;
+    perspective: 1000px;
+    backface-visibility: hidden;
+    transform: translated(0px, 0px, 0px);
+    filter: url("#blur");
+}
+.transparent_img {
+    filter: blur(90px);
+    -webkit-filter: blur(90px);
+    -moz-filter: blur(90px);
+    -o-fileter: blur(90px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='90');
+}
+
+.overlay_background{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%;
+    z-index: 0;
+}
+
+.none {
+    display: none;
+}
+.block {
+    display: block;
+}
+.ias_trigger{
+    position: absolute;
+    left: 42%;
+    padding-top: 6px;
+}
+.ias_trigger a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'museo_sans300';
+    font-size: 22px;
+}
+.ias_trigger a:hover{
+   border-bottom: 1px solid #fff;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* selector bar */
+.menu{
+    width:150px;
+    height:30px;
+    background-color:#000;
+    float: right;
+    z-index: 4;
+    padding-top: 5px;
+}
+.menu ul{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+    z-index: 5;
+}
+.menu li{
+    float:left;
+    margin-left;
+    position:relative;
+}
+.menu li a{
+    font-family:Arial;
+    font-size:15px;
+    color: #C8C4C4;
+    line-height:30px;
+    display:block;
+    text-decoration:none;
+    white-space:nowrap;
+    width: 150px;
+    padding-left: 5px;
+}
+/*dd menu*/
+.menu ul ul{
+    display:none;
+}
+.menu li:hover ul{
+    display:block;
+    position:absolute;
+}
+.menu li:hover li a{
+    background-color:#fff;
+    color:#000;
+    width:145px;
+}
+.menu li:hover li a:hover{
+    background-color:#0066ff;
+    color:#fff;
+}
+.menu ul li img{
+    width: 15px;
+    height: 10px;
+    margin-left: 50px;
+}
+
+.comment-box {
+    background-color: #231F1F;
+    min-height: 50px;
+    height: auto;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.comment-text {
+    float:left;
+    width:95%;
+    padding: 10px 0px 0px 30px;
+    cursor: pointer;
+}
+
+.show-hide-comment {
+    float: right;
+    padding:20px 20px 0px 0px;
+    margin-top: 5px;
+    cursor: pointer;
+    background: transparent url("http://img.wtsongs.com/images/static/site/down_arrow.png") no-repeat scroll 0% 0%;
+    background-size: 20px;
+}
+
+.comment-container {
+    padding: 0px 40px;
+}
+
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {
+    width: 100% !important;
+}
+
+.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {
+    width: 100% !important;
+}
+.fb_like_dyn {
+    border: none !important;
+    visibility: visible !important;
+    width: 79px !important;
+    height: 20px !important;
+}
+.fb_comment_dyn {
+    border: none !important;
+    overflow: hidden !important;
+    height: 235px !important;
+    width: 992px;
+    left: 0px !important;
+}

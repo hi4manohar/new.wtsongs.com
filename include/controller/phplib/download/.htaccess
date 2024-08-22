@@ -1,0 +1,6 @@
+AddType application/octet-stream .mp3
+SetEnv no-gzip dont-vary
+<FilesMatch "\.(mov|mp3|jpg|pdf)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>

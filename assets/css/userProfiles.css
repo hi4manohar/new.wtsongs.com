@@ -1,0 +1,126 @@
+.usertabHeader {
+  height: auto;
+  width: 100%;
+  background-color: rgb(107, 50, 82);
+  color: #CCC;
+  float: left;
+}
+
+.subTab {
+  width: 550px;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  left: 25%;
+  right: 25%;
+  background-color: rgb(107, 50, 82);
+}
+
+.subTab li {
+  float: left;
+  list-style-type: none;
+  margin-left: 20px;
+  padding-top: 2px;
+  width: 150px;
+  height: 30px;
+  border-radius: 70px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.subTab li a {
+  color:#fff;
+  line-height: 25px;
+}
+
+.subTab li:hover {
+  background-color: rgb(221, 69, 69);
+}
+
+.us_body {
+  margin:0 auto;
+  width: 550px;
+  height: auto;
+  background-color: rgb(107, 50, 82);
+  color: #ccc;
+}
+
+.us_body a {
+  color: #ccc;
+  line-height: 30px;
+}
+
+.us_body a:hover {
+  text-decoration: underline;
+}
+
+.user_detail {
+  width: 120%;
+  margin-left: 30px;
+  float: left;
+  margin-top: 10px;
+}
+
+.user_detail .u_detail {
+  display: table-cell;
+  vertical-align: top;
+  width: 175px;
+  float: left;
+  padding-top: 10px;
+  color: #ccc;
+}
+
+.lbl_grp {
+  float: left;
+  height: auto;
+}
+
+.user_detail input[type="text"] {
+  padding: 0.5em 1em 0.5em 1.2em;
+  text-overflow: ellipsis;
+  border-radius: 70px;
+  background-color: rgb(59, 59, 82);
+  color: #ccc;
+  border: 1px solid rgb(187, 187, 207);
+  width: 250px;
+}
+
+.user_detail_row {
+  height: 50px;
+}
+
+.user_detail_row .btn {
+  line-height: 18px;
+}
+
+.user_detail_row .btn:hover {
+  text-decoration: none;
+  background-color: green;
+}
+
+.custom_checkbox {
+  position: relative;
+  top:10px;
+  line-height: 30px;
+  display: block;
+  background-size: 30px;
+  background-position: -1px -1px;
+}
+
+.custom_checkbox_text {
+  margin-left: 30px;
+  opacity: 0.8;
+}
+
+.custom_user_row {
+  height: 185px;  
+}
+
+.custom_user_email {
+  height: 150px;
+}
+
+.user_detail_row.btn_row {
+  height: 50px;
+}

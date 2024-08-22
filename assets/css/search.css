@@ -1,0 +1,219 @@
+*{margin: 0;padding: 0;}
+ .suggestion_containner{
+   width: 522px;
+   height: 500px;
+   min-height:300px;
+   background-color: #2A2727;
+   left:13%;
+   position:fixed;
+   top: 50px;
+   z-index: 999;
+   display: none;
+
+ }
+ .suggestion_containner_inner{
+   overflow: auto;
+   width: 100%;
+   height:90%;
+ }
+/*============ songs suggestion css start ============= */
+
+ .songs_suggestion{
+   width: 100%;
+   height: 30px;
+   background-color: #471F1F;
+   float: left;
+   margin-top: 5px;
+ }
+ .songs_suggestion h4{
+   font-family: 'museo_sans300';
+   font-size: 18px;
+   color: #ccc;
+   padding-left: 20px;
+   padding-top: 5px;
+   text-transform: lowercase;
+ }
+ .songs_suggestion_containner{
+   width: 100%;
+   height: auto;
+   float: left; 
+ }
+ .songs_suggestion_item{
+   background-color: #464242;
+   border-bottom: dotted #000 1px;
+   width: 100%;
+   height: 30px;
+ }
+ .songs_suggestion_item a{
+   font-family: 'museo_sans300';
+   font-size: 14px;
+   color: #fff;
+   padding-left: 20px;
+   padding-top: 8px;
+   text-decoration: none;
+   display: block;
+   opacity: .5;
+ }
+ .songs_suggestion_item a:hover{
+   opacity: 1;
+   text-decoration: underline;
+ }
+/* ============= songs suggestion css end ============= */
+
+/* ============= albums suggestion css start ============= */
+
+.albums_suggestion{
+  width: 100%;
+  height: 30px;
+  background-color: #471F1F;
+  float: left;
+}
+.albums_suggestion h4{
+  font-family: 'museo_sans300';
+  font-size: 18px;
+  color: #ccc;
+  margin-left: 20px;
+  padding-top: 5px;
+  text-transform: lowercase;
+}
+.albums_suggestion_containner{
+  width: 100%;
+  height: auto;
+  background-color:#999999;
+  float: left; 
+}
+.albums_suggestion_item{
+  background-color: #464242;
+  border-bottom: dotted #000 1px;
+  width: 100%;
+  height: 30px;
+}
+.albums_suggestion_item a{
+  font-family: 'museo_sans300';
+  font-size: 14px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 8px;
+  text-decoration: none;
+  display: block;
+  opacity: .5;
+}
+.albums_suggestion_item a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+/* ============= albums suggestion css end ============= */
+
+/* ============= playlist suggestion css start ============= */
+
+.playlist_suggestion{
+  width: 100%;
+  height: 30px;
+  background-color: #471F1F;
+  float: left;
+}
+.playlist_suggestion h4{
+  font-family: 'museo_sans300';
+  font-size: 18px;
+  color: #ccc;
+  margin-left: 20px;
+  padding-top: 5px;
+  text-transform: lowercase;
+}
+.playlist_suggestion_containner{
+  width: 100%;
+  height: auto;
+  background-color:#999999;
+  float: left; 
+}
+.playlist_suggestion_item{
+  background-color: #464242;
+  border-bottom: dotted #000 1px;
+  width: 100%;
+  height: 30px;
+}
+.playlist_suggestion_item a{
+  font-family: 'museo_sans300';
+  font-size: 14px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 8px;
+  text-decoration: none;
+  display: block;
+  opacity: .5;
+}
+.playlist_suggestion_item a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+/* ============= playlist suggestion css end ============= */
+
+/* ============= artist suggestion css start ============= */
+
+.artist_suggestion{
+  width: 100%;
+  height: 30px;
+  background-color: #471F1F;
+  float: left;
+}
+.artist_suggestion h4{
+  font-family: 'museo_sans300';
+  font-size: 18px;
+  color: #ccc;
+  margin-left: 20px;
+  padding-top: 5px;
+  text-transform: lowercase;
+}
+.artist_suggestion_containner{
+  width: 100%;
+  height: auto;
+  background-color:#999999;
+  float: left; 
+}
+.artist_suggestion_item{
+  background-color: #464242;
+  border-bottom: dotted #000 1px;
+  width: 100%;
+  height: 30px;
+}
+.artist_suggestion_item a{
+  font-family: 'museo_sans300';
+  font-size: 14px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 8px;
+  text-decoration: none;
+  display: block;
+  opacity: .5;
+}
+.artist_suggestion_item a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+/* ============= artist suggestion css end ============= */
+/* =================== see all suggestion button css start ===*/
+.see_all_suggestion{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  float: left;
+}
+.see_all_suggestion a{
+  font-family: 'museo_sans300';
+  font-size: 20px;
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 8px;
+  text-decoration: none;
+  display: block;
+  opacity: .5;
+  text-align: center;
+}
+.see_all_suggestion a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 5px;
+}

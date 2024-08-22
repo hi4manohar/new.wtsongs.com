@@ -1,0 +1,66 @@
+.reset_password_container{
+	width: 400px;
+	height: 280px;
+	background-color: #1D1B1B;
+	margin-left: 30%;
+	margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: 999;
+}
+.reset_password_container h4{
+	font-family: arial;
+	font-size: 22px;
+	color: #ccc;
+	padding: 15px 0px;
+	text-align: center;
+	border-bottom: 1px dotted #6B6B6B;
+}
+#reset_password_form input[type=password]{
+  width: 300px;
+  height: 35px;
+  margin-top: 25px;
+  background-color: #575454;
+  border: 1px solid #ccc;
+  color: #fff;
+  margin-left: 40px;
+}
+#reset_password_form input[placeholder]{
+   padding-left: 10px;
+}
+#reset_password_form input[type=submit]{
+  width: 150px;
+  height: 35px;
+  margin-top: 30px;
+  background-color: #f00;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 40px;
+  border:2px solid #1D1B1B;
+  border-radius: 20px;
+}
+#reset_password_form input[type=submit]:hover{
+	border:2px solid red;
+}
+#reset_password_form input[type=button]{
+  width: 150px;
+  height: 35px;
+  margin-top: 30px;
+  background-color: #f00;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 50px;
+  border:2px solid #1D1B1B;
+  float: right;
+  border-radius: 20px;
+}
+#reset_password_form input[type=button]:hover{
+	border:2px solid red;
+}

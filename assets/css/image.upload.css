@@ -1,0 +1,63 @@
+
+#imgChange {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  color: #FFFFFF;
+  display: none;
+  height: 175px;
+  left: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  width: 175px;
+  border-radius: 50%;
+}
+#imgChange input[type="file"] {
+  bottom: 0;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+/* Progressbar */
+.progressBar {
+  background: none repeat scroll 0 0 #E0E0E0;
+  left: 0;
+  padding: 3px 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: none;
+}
+.progressBar .bar {
+  background-color: #FF6C67;
+  width: 0%;
+  height: 14px;
+}
+.progressBar .percent {
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 2px;
+  width: 100%;
+}
+
+#imgArea img {
+  border-radius: 50%;
+}
+#imgArea:hover #imgChange {
+  display: block;
+}
+
+#imgChange span {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  padding-top: 40%;
+}

@@ -1,0 +1,2 @@
+[21-Feb-2016 15:23:15 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'user_wtsongs_dat'@'localhost' (using password: YES) in /home/wortechs/public_html/wtsongs/wtsongs.com/include/controller/db/DBConfig.php on line 27
+[21-Feb-2016 15:23:20 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'user_wtsongs_dat'@'localhost' (using password: YES) in /home/wortechs/public_html/wtsongs/wtsongs.com/include/controller/db/DBConfig.php on line 27

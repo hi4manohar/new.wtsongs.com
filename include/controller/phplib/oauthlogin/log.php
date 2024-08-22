@@ -1,0 +1,1 @@
+<center><h3><a href="logout.php">Logout Here</a></h3></center>

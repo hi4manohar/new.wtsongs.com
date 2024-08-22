@@ -1,0 +1,109 @@
+#Maintainance Mode
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+ErrorDocument 404 /
+#RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+#RewriteCond %{REQUEST_URI} !^/503.php [NC]
+#RewriteRule .* /503.php [R,L]
+
+# Check if this is the noredirect query string
+RewriteCond %{QUERY_STRING} (^|&)noredirect=true(&|$)
+# Set a cookie, and skip the next rule
+RewriteRule ^ - [CO=mredir:0:%{HTTP_HOST},S]
+
+# Check if this looks like a mobile device
+# (You could add another [OR] to the second one and add in what you
+#  had to check, but I believe most mobile devices should send at
+#  least one of these headers)
+RewriteCond %{HTTP:x-wap-profile} !^$ [OR]
+RewriteCond %{HTTP:Profile}       !^$
+# Check if we're not already on the mobile site
+RewriteCond %{HTTP_HOST}          !^m\.
+# Check to make sure we haven't set the cookie before
+RewriteCond %{HTTP:Cookie}        !\smredir=0(;|$)
+# Now redirect to the mobile site
+RewriteRule ^ http://m.wtsongs.com%{REQUEST_URI} [R,L]
+
+####Host Redirect
+RewriteCond %{HTTP_HOST} ^wtsongs.com [NC]
+RewriteRule ^(.*)$ http://www.wtsongs.com/$1 [L,R=301]
+
+#Prvent Files Caching
+<filesMatch "\.(php|html|htm|js|css)$">
+  FileETag None
+  <ifModule mod_headers.c>
+     Header unset ETag
+     Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+     Header set Pragma "no-cache"
+     Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+  </ifModule>
+</filesMatch>
+
+#Url Rewriting Starts
+Options +FollowSymLinks
+RewriteBase /
+
+RewriteRule ^playlists/([^/]+)/?$ /browse/playlist.php?name=$1 [NC,L]
+RewriteRule ^playlists/([^/]+)/([^/]+)/?$ /browse/playlist.php?user=$1&name=$2 [NC,L]
+RewriteRule ^playlists/([^/]+)/([^/]+)/([^/]+)?$ /browse/playlist.php?cat=$1&user=$2&name=$3 [NC,L]
+
+RewriteRule ^playlist/([^/]+)/?$ /browse/featuredplaylist.php?type=$1 [NC,L]
+
+RewriteRule ^search/([^/]+)/([^/]+)/?$ /browse/search.php?cat=$1&q=$2 [NC,L]
+
+RewriteRule ^error_page/?$ /page/broken_page.php [NC,L]
+
+RewriteRule ^bad_browser/?$ /page/bad_browse.php [NC,L]
+
+RewriteRule ^artist/([^/]+)/?$ /browse/artist-detail.php?name=$1 [NC,L]
+RewriteRule ^artist/([^/]+)/([^/]+)/?$ /browse/artist-detail.php?name=$1&cat=$2 [NC,L]
+
+RewriteRule ^album/([^/]+)/?$ /browse/album.php?name=$1 [NC,L]
+RewriteRule ^song/([^/]+)/?$ /browse/album.php?song=$1 [NC,L]
+RewriteRule ^song/([^/]+)/album/([^/]+)/?$ /browse/album.php?song=$1&al=$2 [NC,L]
+
+RewriteRule ^about/([^/]+)/?$ /page/about.php?content=$1 [NC,L]
+RewriteRule ^usersquery/?$ /page/usersquery.php [NC,L]
+
+RewriteRule mostpopular/(.*)/? /browse/mostpopular.php?category=$1 [NC,L]
+RewriteRule myhome/(.*)/? /myprofile/myhome.php?category=$1 [NC,L]
+
+RewriteRule user/([^/]+)/?$ /myprofile/myhome.php?user=$1 [NC,L]
+RewriteRule user/([^/]+)/([^/]+)?$ /myprofile/myhome.php?user=$1&cat_type=$2 [NC,L]
+
+RewriteRule ^popularcategory/?$ /browse/popularcategory.php [NC,L]
+RewriteRule ^popularcategory/([^/]+)/?$ /browse/popularcategory.php?category=$1 [NC,L]
+
+RewriteRule ^access/([^/]+)/([^/]+)/? /browse/index.php?category=$1&lang=$2 [NC,L]
+RewriteRule ^access/([^/]+)/? /browse/index.php?category=$1 [NC,L]
+
+RewriteRule topcharts/? /browse/top-charts.php [NC,L]
+RewriteRule custom_signup/? /include/controller/phplib/customLoginSignup/signup.php [NC,L]
+RewriteRule update_user_meta/? /include/controller/ajax/update_user.php [NC,L]
+RewriteRule favouritecheck/? /include/controller/ajax/checkfavourite.php [NC,L]
+RewriteRule userlogout/? /page/logout.php [NC,L]
+RewriteRule useraddtopplaylist/? /include/controller/ajax/addtoplaylist.php [NC,L]
+RewriteRule usershare/? /include/controller/ajax/share.php [NC,L]
+RewriteRule userplaytrackupdate/? /include/controller/ajax/update_hits.php [NC,L]
+RewriteRule usersearchsuggestion/? /include/controller/ajax/searchsuggestion.php [NC,L]
+
+RewriteRule ^userhome/? /include/main-content/myprofile/myhome.php [NC,L]
+
+RewriteRule ^img_upload/?$ /include/controller/phplib/img.upload/image_upload_demo_submit.php [NC,L]
+
+RewriteRule ^uploaded_imgs/([^/]+)/?$ /include/controller/phplib/img.upload/uploades/medium/ [NC,L]
+
+RewriteRule ^fb_login/?$ /include/controller/phplib/facebook-oauth/check_user.php [NC,L]
+
+RewriteRule ^newreleased/([^/]+)?$ /browse/index.php?category=albums&sortby=new_released&lang=$1 [NC,L]
+
+RewriteRule ^pp_content/?$ /page/privacy_policy.php [NC,L]
+
+RewriteRule ^queueBox/?$ /include/main-content/content_fun/queueBox.php [NC,L]
+
+RewriteRule ^login_signup/?$ /include/main-content/content_fun/loginSignupBox.php [NC,L]
+
+RewriteRule ^fetch_data/?$ /include/controller/ajax/fetch_data_js.php [NC,L]
+
+RewriteRule ^download/?$ /include/controller/phplib/download/download.php [NC,L]

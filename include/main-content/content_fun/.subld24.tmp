@@ -1,0 +1,65 @@
+<?php
+
+class static_content {
+  function about_us_content() {
+    $this->about_us();
+  }
+
+  function about_us() {
+
+?>
+
+
+<!-- write your about_us content here -->
+<div class="aboutus_containner">
+	<div class="aboutus_header">
+		<h1>We are the founder of wtsongs.com</h1>
+		<p>We focus your idea into a unique vision and identity. Marketing your products and services under one concise and consistent brand voice. Seamless experiences andcustomer services that create return business and brand loyalty.
+		We focus your idea into a unique vision and identity. Marketing your products and services under one concise and consistent brand voice. Seamless experiences andcustomer services that create return business and brand loyalty.
+		</p>
+	</div>
+	<div class="first_section">
+		<div class="first_image">
+			<img src="/desktop/akshay.jpg">
+		</div>
+		<div class="first_details">
+		<!-- ff= founder first -->
+			<div class="f_f_name">
+				<h2>First Founder Name</h2>
+				<p>AND HIS PROFFESSION</p>
+			</div>
+			<p class="about_his">Avid follower of technology. I help businesses create elegant solutions to complex problems whilst maintaining the focus on vision and strategy.Avid follower of technology. I help businesses create elegant solutions to complex problems whilst maintaining the focus on vision and strategy.</p>
+			<button class="send_me_mail">send me a mail</button>
+			<div class="f_f_social">
+				<div class="f_f_socil_first"></div>
+				<div class="f_f_socil_first"></div>
+				<div class="f_f_socil_first"></div>
+			</div>
+		</div>
+	</div>
+	<div class="second_section">
+		<div class="second_image"></div>
+		<div class="second_details">
+			<!-- fs= founder second -->
+			<div class="f_f_name">
+				<h2>First Founder Name</h2>
+				<p>AND HIS PROFFESSION</p>
+			</div>
+			<p class="about_his">Avid follower of technology. I help businesses create elegant solutions to complex problems whilst maintaining the focus on vision and strategy.Avid follower of technology. I help businesses create elegant solutions to complex problems whilst maintaining the focus on vision and strategy.</p>
+			<button class="send_me_mail">send me a mail</button>
+			<div class="f_f_social">
+				<div class="f_f_socil_first"></div>
+				<div class="f_f_socil_first"></div>
+				<div class="f_f_socil_first"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<?php
+
+  }
+}
+
+?>
